@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>160-부모자식 및 형제관계의 마진</title>
+    <link rel="shortcut icon" href="images/my favicon.ico" type="image/x-icon">
+    <style>
+        *{margin:0; padding:0;}
+        #parent{width:600px;height:600px; border: 1px solid red;} 
+        #parent>p{width:150px; height:50px; font-size:16px; line-height:50px; text-align:center; border:1px solid green;}
+
+        .child_1,.child_2{display: inline-block;}
+        /* .child_2{margin-top:-52px;margin-left:152px;} */
+
+        .child_1{margin-right: 100px; margin-bottom: 0px; margin: 0 100px 0 0;}
+        .child_2{margin-left: 100px; margin: 0 0 0 100;}
+        .child_3{margin-top:100px; margin: 100px 0 0 0;}
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <p class="child_1">child 1(150*50)</p><p class="child_2">child 2(150*50)</p>
+        <p class="child_3">child 3(150*50)</p>
+    </div>
+   
+</body>
+</html>

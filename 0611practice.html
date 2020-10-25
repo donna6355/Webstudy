@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice</title>
+    <style>
+        *{margin:0;padding:0;}
+        #wrap{width:800px;margin:50px auto;}
+        header>h1{height:100px;line-height:100px;text-align:center;}
+        header>p{text-align:left;}
+
+        section>h2{height:80px;line-height:80px;color:turquoise;}
+        section>ol>li{list-style:none;}
+        section>ol>li>a{color:white;text-decoration:none;}
+        section>ol:first-of-type>li:first-child>a{background-color:blue;}
+        section>ol:first-of-type>li:nth-child(2)>a{background-color:green;}
+        section>ol:first-of-type>li:last-child>a{background-color:yellow;}
+        
+        section>ol.float{*zoom:1;}
+        section>ol.float:after{display:block;clear:both;content:"";}
+        section>ol.float>li{float:left;width:50px;height:50px;line-height:50px;text-align:center;}
+        section>ol.float>li:nth-child(2n){background-color:chartreuse;}
+        section>ol.float>li:nth-child(2n-1){background-color:olivedrab;}
+
+        footer>p{margin:50px 0;font-weight:900;font-family:'Palace Script MT'}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>Practice</h1>
+            <p>This is the practice for chapter 3.</p>
+        </header>
+        <section>
+            <h2>pseudo selector</h2>
+            <ol>
+                <li><a href="#">blue</a></li>
+                <li><a href="#">green</a></li>
+                <li><a href="#">yellow</a></li>
+            </ol>
+            <h2>float attribute</h2>
+            <ol class="float">
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+                <li>Sun</li>
+            </ol>
+        </section>
+        <footer>
+            <p>Bye for good</p>
+        </footer>
+    </div>
+</body>
+</html>

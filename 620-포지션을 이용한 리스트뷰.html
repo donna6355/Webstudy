@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>620-포지션을 이용한 리스트뷰</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{font-family:nanumgothic;}
+        ul>li{height:100px;border-top:1px solid gray;}
+        ul>li:last-child{border-bottom:1px solid gray;}
+        ul>li>a{display:block;position: relative;width:100%;height:100%;margin:30px;}
+        
+        ul>li>a>.frame{display: block;position: absolute;left:0;top:0;width:50px;height:50px;background-image: url(./images/star_1.png);background-size:cover;}
+        ul>li:nth-child(2)>a>span{background-image: url(./images/star_2.png);background-size:cover;}
+        ul>li:nth-child(3)>a>span{background-image: url(./images/star_3.png);background-size:cover;}
+        
+        ul>li .cont{position:absolute;left:70px;top:0;}
+        ul>li .cont>h2{color:gray;font-size: 18px;;}
+        ul>li .cont>p{color:gray;font-size: 15px;;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">스타벅스 UX디자인</h1>
+        <ul>
+            <li><a href="#">
+                <span class="frame"></span>
+                <div class="cont">
+                    <h2>사용자 중심의 편의성 제공</h2>
+                    <p>Wifi 접속이 빠르고, 고급스런 인테리어 제공, 앱으로 바로 주문 가능하여 줄서지 않고 수령가능</p>
+                </div>
+            </a></li>
+            <li><a href="#">
+                <span class="frame"></span>
+                <div class="cont">
+                    <h2>좋은 품질의 다양한 상품 제공</h2>
+                    <p>커피 품질이 좋고, 주기적으로 신메뉴 출시하며 나라별로 새로운 메뉴나 굿즈가 많습니다</p>
+                </div>
+            </a></li>
+            <li><a href="#">
+                <span class="frame"></span>
+                <div class="cont">
+                    <h2>다양한 부가서비스 제공</h2>
+                    <p>사이렌 오더시 무료샷을 받을 수 있고, 카드사 할인연계가 많으며 브랜딩이 잘 되어 있습니다.</p>
+                </div>
+            </a></li>
+        </ul>
+    </div>
+</body>
+</html>

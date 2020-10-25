@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>700-플렉스 한줄일 때의 교차축 정렬 align-items</title>    
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        /* 플렉스 컨테이너 */
+        section{
+            display:flex;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            
+            align-items:flex-end;
+            align-items:center;
+            align-items:flex-start;
+            align-items:baseline;
+
+            width: 900px;
+            height: 800px;
+            border: 3px solid #000;
+        }
+
+        /* 플렉스 아이템 */
+        section>p{
+            width: 200px;
+            height: 120px;
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 120px;            
+            text-align: center;
+            border: 3px dashed green;
+        }
+
+        .red{
+            align-self:flex-end;
+            background-color: red;
+        }
+
+        .blue{
+            align-self:center;
+            background-color: blue;
+        }
+
+        .yellow{
+            align-self:flex-end;
+            font-size:35px;
+            background-color: yellow;
+        }
+
+        .purple{background-color: purple;}
+        .brown{background-color: brown;}
+        .pink{font-size:72px;background-color: pink;}
+        .orange{background-color: orange;}
+    </style>
+</head>
+<body>
+    <section>
+        <p class="red">1</p>
+        <p class="blue">2</p>
+        <p class="yellow">3</p>
+        <p class="purple">4</p>
+        <p class="brown">5</p>
+        <p class="pink">6</p>
+        <p class="orange">7</p>
+    </section>
+</body>
+</html>

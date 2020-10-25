@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+ul>li:first-child{border-top: 1px solid #ccc;}
+ul>li{border-bottom: 1px solid #ccc;}
+ul>li>a{display: block;position: relative; height: 40px;padding: 30px 0 30px 84px;}
+
+ul>li>a>.frame{display: block;position: absolute; left: 10px;top: 18px;width: 64px;height: 64px;background-size: cover; border-radius: 5px;}
+ul>li:nth-child(1)>a>.frame{background-image: url(./../images/star_1.png);}
+ul>li:nth-child(2)>a>.frame{background-image: url(./../images/star_2.png);}
+ul>li:nth-child(3)>a>.frame{background-image: url(./../images/star_3.png);}
+ul>li>a:hover{background-color: rgb(248, 255, 190);}
+
+ul>li>a>h2{margin-bottom: 10px;color:#666;font-size: 16px;}
+ul>li>a>p{overflow:hidden;white-space: nowrap;text-overflow:ellipsis;}
+
+/* 가상선택자를 활용한 이미지 출력 */
+ul>li>a:after{display: block;position: absolute; left: 10px;top: 18px;width: 64px;height: 64px;background-size: cover; border-radius: 5px;content:"";}
+ul>li:nth-child(1)>a:after{background-image: url(./../images/star_1.png);content: '';}
+ul>li:nth-child(2)>a:after{background-image: url(./../images/star_2.png);content: '';}
+ul>li:nth-child(3)>a:after{background-image: url(./../images/star_3.png);content: '';}
+
+/* :after, :before 태그는 반드시 content값을 가져야됨 */

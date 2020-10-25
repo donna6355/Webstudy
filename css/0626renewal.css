@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{background-color:#2c354a;color:#d9d7d7;}
+#wrap{margin:30px 120px;}
+
+header{position: relative;width:100%;height:100px;}
+header>h1{position:absolute;left:0;top: -55px;width:192px;height:192px;text-indent:-9999px;background-image: url(./../../assignment/DaeguOperahouse/img_logo_color5.png);}
+header>h1>a{display:block;width:100%;height:100%;}
+
+header>.gnb>ul{float:left;margin:20px 0 0 300px;}
+header>.gnb>ul>li{float:left;width:150px;margin-right:10px;}
+header>.gnb>ul>li>a{display:block;width:100%;height:100%;color: #d9d7d7;font-family:roboto;text-align:center;}
+header>.gnb>ul>li>a>.kor{font-weight: 800; font-size: 20px;}
+header>.gnb>ul>li>a>.eng{font-size: 10px;}
+
+header>aside{position: absolute;top:0;width:100%;height:100%;}
+header>aside.clear>ul{float:right;}
+header>aside.clear>ul>li{float:left;}
+header>aside.clear>ul>li>a{display:block;width:64px;height:20px;margin-right:36px;color:#d9d7d7;font-size: 10px;font-family:roboto;text-align:center;}
+header>aside>ul>li>a:before{display:inline-block;width:10px;height:10px;background-image: url(./../images/arrow.gif);background-size: cover;content:"";}
+
+section>.banner{position:relative;}
+section>.banner>h2{overflow:hidden;width:800px;height:400px;margin:10px auto;text-indent:-9999px;background-image: url(./../../assignment/DaeguOperahouse/img_matine01.jpg);background-size: cover;}
+
+
+
+section>.banner>h3{overflow:hidden;position: absolute;width:270px;height:400px;text-indent:-99999px;background-size: cover;}
+section>.banner>h3:nth-child(2){left:1160px;top:0;background-image: url(./../../assignment/DaeguOperahouse/img_carmen01.jpg);background-position: -300px;}
+section>.banner>h3:last-child{left:0;top:0;background-image: url(./../../assignment/DaeguOperahouse/img_sevilla01.jpg);background-position: -200px;}
+.banner>h3:after{display:block;position:absolute;z-index:100;width:270px;height:400px;margin-top:-18px;background-color:rgba(0, 0, 0, 0.5);content:"";}
+
+.middle>div{float:left;width:50%;}
+.middle>div>h4{text-align:center;}
+.middle>div>h4:after{display:block;height:150px;content:"";outline:2px solid #d9d7d7;} 
+
+.bottom>ul>li{float:left;width:22%;margin-right:3%;outline:1px solid #d9d7d7;}
+.bottom>ul>li:last-child{margin-right:0;}
+.bottom>ul>li{float:left;}
+.bottom>ul>li>h5{}
+.bottom>ul>li>a{overflow:hidden;color:#d9d7d7;font-weight: 800;margin:15px 0;white-space:nowrap;text-overflow:ellipsis;}
+.bottom>ul>li>a:before{display:block;width:100%;height:100px;background-image:url(./../images/star_1.png);background-size:contain;content:"";}
+
+.clear{*zoom:1;}
+.clear{display:block;clear:both;content:"";}

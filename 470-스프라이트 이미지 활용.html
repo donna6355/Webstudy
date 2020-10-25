@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>470-스프라이트 이미지 활용</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        p{width:647px;height:325px;margin:0 auto;text-indent:-999px;background-image:url(./images/ad.jpg);border:1px solid black;}
+        ul{width:102px;margin:5px auto;*zoom:1;}
+        ul:after{display:block;clear:both;content:"";}
+        ul>li{float:left;width:18px;height:18px;margin-right:10px;text-indent:-999px;background-image:url(./images/bul.png);}
+        ul>li:last-child{margin-right:0;}
+        ul>li.on,ul>li:hover{background-position:0 -18px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">스프라이트 이미지 버튼</h1>
+        <p>엔비룩 - 트렌디한 여룸 휴가룩 핫신상 (6,900원/무료배송)</p>
+        <ul>
+            <li class="on">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+</body>
+</html>

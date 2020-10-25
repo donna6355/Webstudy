@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+h1 {
+	line-height: 100px;
+	text-align: center;
+}
+
+ul {
+	width: 980px;
+	margin: 0 auto;
+	*zoom:1;
+
+	&:after{display: block;clear: both;content: '';}
+
+	&:hover>li{width: 50px;}
+
+	>li{
+		float: left;
+		width: 140px;
+		overflow: hidden;
+		transition: all 0.5s;
+
+		&:hover{
+			width: 680px;
+		}
+
+		>a{
+			display: block;
+			>img{
+				display: block;
+				width: 680px;
+			}
+		}
+	}
+}

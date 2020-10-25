@@ -1,0 +1,14 @@
+body {
+	#wrap {
+		footer {
+			background-color: #474747;
+			> address {
+				height: 100px;
+				color: #fff;
+				line-height: 100px;
+				text-align: center;
+				@include textDeco;
+			}
+		}
+	} // end of #wrap
+}

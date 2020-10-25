@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>400-가상선택자 :before, :after</title>    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        h2{text-align:center;}
+        span:before{
+            content:"앞 그림자 ";
+            content:'나이 ';
+        }
+        
+        span:after{
+            content:"뒤 그림자";
+            content:'세';
+        }
+
+        p:before{
+            font-size:20px;
+            content:'날씬한 기분의 ';
+        }
+
+        p:after{
+            display:block;
+            font-size:20px;
+            content:' 다이어트 식이섬유';
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">그림자같은 가상선택자 :after, :before</h1>
+
+        <h2><span>20</span></h2>
+
+        <p>미에로 화이바</p>
+    </div>
+</body>
+</html>

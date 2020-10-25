@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>940-다중백그라운드</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body{background-image: url(./images/sea.jpg);background-size: cover;background-attachment: fixed;}
+        /* background-attachment:fixed 배경화면 고정 */
+        #wrap{width:800px;margin:0 auto;background-color: rgba(255,255,0,1);}
+        p{height:800px;border:1px solid #f00;background-image: url(./images/daum.png),url(./images/naver.png),url(./images/google.png),url(./images/prince.png);background-position:left top,right top,left bottom,right bottom;background-size: auto 100px;background-repeat: no-repeat;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">하나의 요소에 여러개의 배경이미지 넣기</h1>
+        <p>
+            multi-background-image
+        </p>
+    </div>
+</body>
+</html>

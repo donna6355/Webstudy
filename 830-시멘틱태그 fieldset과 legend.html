@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>830-시멘틱태그 fieldset과 legend</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1>fieldset - 여러 폼 요소들을 각각의 그룹으로 묶는 역할</h1>
+        <form action="./800-login_ok.html">
+            <fieldset>
+                <legend>기본정보</legend>
+                <!-- <label for="securenum">개인사번</label>
+                <input type="text" id="securenum" name="securenum"><br />
+                <label for="pwd">패스워드</label>
+                <input type="password" id="pwd" name="pwd"> -->
+                <ul>
+                    <li>
+                        <label for="securenum">개인사번</label>
+                        <input type="text" id="securenum"><br />
+                    </li>
+                    <li>
+                        <label for="pwd">패스워드</label>
+                        <input type="password" id="pwd">
+                    </li>
+                </ul>               
+            </fieldset>
+            <fieldset>
+                <legend>금융정보</legend>
+                <!-- <label for="account">급여계좌</label>
+                <input type="text" id="account" name="account"><br />
+                <label for="account_pwd">패스워드</label>
+                <input type="password" id="account_pwd" name="account_pwd"> -->
+                <ol>
+                    <li>
+                        <label>급여계좌
+                            <input type="text" name="account"><br />
+                        </label>
+                    </li>
+                    <li>
+                        <label for="account_pwd">패스워드
+                            <input type="password" id="account_pwd" name="account_pwd">
+                        </label>        
+                    </li>
+                </ol>
+            </fieldset>
+            <p>
+                <button type="submit">전송</button>
+                <button type="reset">재입력</button>
+            </p>
+        </form>
+
+    </div>
+</body>
+</html>

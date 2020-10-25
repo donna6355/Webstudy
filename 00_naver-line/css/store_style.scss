@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import url(./reset.css), url(./header_footer.css);
+
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+  * {
+    font-family: 'nanumgothic';
+  }
+
+  section {
+    width: 100%;
+    margin: 63px auto 0;
+    > .banner {
+      position: relative;
+      width: 100%;
+      height: 440px;
+      text-indent: -9999px;
+      background-image: url(../images/line_main_banner_4.png);
+      background-position: -600px 0;
+      background-repeat: no-repeat;
+      > a {
+        display: block;
+        width: 140px;
+        height: 33px;
+        position: absolute;
+        left: 270px;
+        bottom: 90px;
+        text-indent: -9999px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+    } //end of .banner
+
+    > .cont {
+      width: 1000px;
+      margin: 160px auto 0;
+      > .body {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-around;
+        width: 100%;
+        height: 556px;
+        margin-bottom: 80px;
+        &:nth-child(even) > img {
+          order: 100;
+        }
+
+        > img {
+          display: block;
+          width: 450px;
+          height: 556px;
+        }
+        &:first-child > img {
+          transform: scale(1.3, 1.3);
+          margin-left: -90px;
+          & + h2 {
+            margin-top: 0;
+            margin-left: 90px;
+          }
+          & ~ p {
+            margin-left: 90px;
+          }
+        }
+        &:last-child > img {
+          width: 546px;
+          height: 323px;
+          margin: calc((556px - 323px)/2) 0 calc((556px - 323px)/2) -100px;
+          & + h2 {
+            margin-top: 140px;
+          }
+        }
+        > h2 {
+          width: 450px;
+          margin: 40px 0 15px;
+
+          color: #444;
+          font-weight: 400;
+          font-size: 55px;
+          line-height: 1.1;
+        }
+        > p {
+          width: 450px;
+          color: #444;
+          font-size: 14px;
+          line-height: 2;
+          > a {
+            display: inline-block;
+            margin-top: 32px;
+            color: #00f;
+            text-decoration: underline;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          > span {
+            display: block;
+            height: 13px;
+          }
+        }
+      } //end of .body
+    } //end of .cont
+  } //end of section
+} // end of #wrap

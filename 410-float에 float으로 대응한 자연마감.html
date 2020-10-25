@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>410-float에 float으로 대응한 자연마감</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{width:1080px;margin:100px auto;}
+        header{*zoom:1;}
+        header:after{display:block;clear:both;content:"";}
+        header>h1{float:left;width:200px;background-color:pink;}
+        header>h1>a{display:block;height:50px;line-height:50px;text-align:center;background-color:yellow;}
+        header>.nav{float:right;width:830px;}
+        header>.nav>li{float:left;float:right;width:200px;margin-right:10px;}
+        header>.nav>li>a{display:block;height:50px;line-height:50px;text-align:center;background-color:green;}
+        header>.nav>li:last-child{margin-right:0;}
+
+        section{height:400px;margin:10px 0;line-height:400px;text-align:center;border:1px solid black;}
+        footer{height:100px;line-height:100px;text-align:center;border:1px solid black;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><a href="#">한국무역협회</a></h1>
+            <ul class="nav">
+                <li><a href="#">1.무역통상정보</a></li>
+                <li><a href="#">2.회원/업무지원</a></li>
+                <li><a href="#">3.무역통계</a></li>
+                <li><a href="#">4.협회안내</a></li>
+            </ul>
+        </header>
+        <section>
+            <h2>본문내용</h2>
+        </section>
+        <footer>
+            <address>&copy;Designed by Donna</address>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>180-내용과 테두리사이의 공간-패딩</title>    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        *{margin:0;padding:0;}
+
+        p{
+            width:300px;
+            height:300px;
+
+            padding-top:50px;
+            padding-right:30px;
+            padding-bottom:50px;
+            padding-left:30px;
+
+            padding:50px 30px;/* 재정의 - 위의 패딩값중 중복되는 부분은 무효처리*/
+
+            background-color:yellow;
+            border:1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <p>패딩은 박스크기에 영향을 준다.</p>
+</body>
+</html>

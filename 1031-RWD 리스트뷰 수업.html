@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1030-RWD 리스트뷰</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap {
+            width: 1023px;
+            margin: 0 auto;
+        }
+
+        h1+p {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul>li {
+            width: 20%;
+            border: 1px dotted #aaa;
+            border-left: none;
+            border-right: none;
+        }
+
+        ul>li>a {
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        ul>li:hover>a {
+            background-color: #ff0;
+        }
+
+        /* 가로폭이 992 이하로 미디어쿼리 설정 */
+        @media screen and (max-width:992px) {
+            #wrap {
+                width: 100%;
+                margin: 0;
+            }
+
+            ul>li:hover>a {
+                color: #fff;
+                font-weight: 800;
+                background-color: #00f;
+            }
+
+        }
+
+        /* 가로폭이 768 이하로 미디어쿼리 설정 */
+        @media screen and (max-width:768px) {
+            ul {
+                display: initial;
+            }
+
+            ul>li {
+                width: 100%;
+                border-bottom: none;
+            }
+
+            ul>li:last-child {
+                border-bottom: 1px dotted #999;
+            }
+
+            ul>li:hover>a {
+                background-color: #f0f;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1 class=text-center>주요 학습 과목</h1>
+        <p>원하는 학습과목을 선택하세요.</p>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">RWD</a></li>
+            <li><a href="#">JAVA</a></li>
+        </ul>
+        <address class="text-center">Designed by Donna:)</address>
+    </div>
+</body>
+
+</html>

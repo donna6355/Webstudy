@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>165-마진 문제풀이</title>
+    <link rel="shortcut icon" href="images/my favicon.ico" type="image/x-icon">
+    <style>
+        *{margin:0; padding:0;}
+        #parent{width:600px;height:600px;margin:0 auto 0 auto; margin:0 auto; border: 1px solid red;} 
+        #parent>p{width:150px; height:50px; font-size:16px; line-height:50px; text-align:center; border:1px solid green;}
+
+        .child_1,.child_2{display: inline-block;}
+        /* .child_2{margin-top:-52px;margin-left:152px;} */
+
+        .child_1{margin:50px 200px 150px;}
+
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <p class="child_1">child 1(150*50)</p><p class="child_2">child 2(150*50)</p>
+        <p class="child_3">child 3(150*50)</p>
+    </div>
+   
+</body>
+</html>

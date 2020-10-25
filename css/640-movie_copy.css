@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#wrap{width:calc(164px * 4 + 9px);margin:0 auto;}
+
+section>h2{padding:10px 0;}
+section>ol{}
+section>ol>li{float:left;position:relative;width:164px;margin-right:3px;outline:1px solid salmon;}
+section>ol>li:last-child{margin-right:0;}
+
+section>ol>li .pht{position:absolute;left:0;top:0;width:100%;height:114px;background-size:contain;}
+
+section>ol>li:nth-child(1) .pht{background-image: url(./../images/movie_1.jpg);}
+section>ol>li:nth-child(2) .pht{background-image: url(./../images/movie_2.jpg);}
+section>ol>li:nth-child(3) .pht{background-image: url(./../images/movie_3.jpg);}
+section>ol>li:nth-child(4) .pht{background-image: url(./../images/movie_4.jpg);}
+
+section>ol>li .pht>.mov{display:block;position:absolute;left:5px;bottom:3px;width:26px;height:26px;text-indent:-999px;background-image: url(./../images/sp_ico.png);background-position: -101px -450px;}
+section>ol>li .pht>.frst{display:block;position:absolute;right:5px;bottom:3px;width:45px;height:25px;color:#fff;font-weight:800;line-height:25px;text-align:center;background-color: green;}
+
+section>ol>li .tit{height:30px;margin-top:114px;font-size:13px;font-weight:600;line-height:30px;}
+section>ol>li .tip{height:25px;font-size:12px;line-height:25px;}
+section>ol>li .tit:before{display:inline-block;width:30px;height:15px;margin-right:5px;line-height:15px;text-align:center;color:#2952f4;content:"HD";border:1px solid #999;}
+
+footer>address{height:50px;line-height:50px;text-align:center;}

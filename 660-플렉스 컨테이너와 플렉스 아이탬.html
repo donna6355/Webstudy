@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>660-플렉스 컨테이너와 플렉스 아이탬</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /*플렉스 컨테이너*/
+        /*flex-direction 주축 설정*/
+        /* flex-wrap 한줄 or 여러줄*/
+        /* flex-flow:row nowrap */
+        section{display:flex;flex-direction:row;flex-wrap: wrap;justify-content:flex-start;
+        width:900px;height:400px;border:3px solid black;}
+       
+        /*플렉스 아이템*/
+        section>p{width:200px;height:120px;border:3px solid red;}
+        .red{background-color: red;order:100;}
+        .blue{background-color:blue;order:-100;}
+        .yellow{background-color: yellow;order:-200;}
+    </style>
+</head>
+<body>
+    <section>
+        <p class="red">1</p>
+        <p class="blue">2</p>
+        <p class="yellow">3</p>
+    </section>
+</body>
+</html>

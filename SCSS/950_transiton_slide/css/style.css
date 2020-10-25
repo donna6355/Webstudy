@@ -1,0 +1,2 @@
+h1{line-height:100px;text-align:center}ul{width:980px;margin:0 auto;*zoom:1}ul:after{display:block;clear:both;content:""}ul:hover>li{width:50px}ul>li{overflow:hidden;float:left;width:140px;transition:all 0.8s ease-in-out}ul>li:hover{width:680px}ul>li>a{display:block;height:380px}ul>li>a>img{display:block;width:680px;height:380px}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>430-float 을 이용한 레이아웃</title>    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{width:638px;margin:0 auto;}
+        header>h1{height:100px;line-height:100px;text-align:center;}
+
+        section{}
+        section>ul{*zoom:1;}
+        section>ul:after{display:block;clear:both;content:"";}
+        section>ul>li{float:left;width:150px;height:50px;margin-right:10px;line-height:50px;text-align:center;border:1px solid black;}
+        section>ul>li:last-child{margin-right:0;}
+
+        section>article{overflow:hidden;width:636px;height:298px;margin-top:10px;text-align:center;border:1px solid black;}
+        section>article>p{margin-top:100px;}
+
+        footer>address{height:50px;line-height:50px;text-align:center;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>웹표준 퍼블리싱 강좌</h1>
+        </header>
+        <section>
+            <ul class="nav">
+                <li>보충특강</li>
+                <li>문제풀이</li>
+                <li>자료실</li>
+                <li>작업환경</li>
+            </ul>
+            <article>
+                <p>
+                    내용출력 <br />
+                    내용출력 <br />
+                    내용출력 <br />
+                    내용출력 <br />
+                </p>
+            </article>
+        </section>
+        <footer>
+            <address>&copy;Designed by 홍길동</address>
+        </footer>
+    </div>
+</body>
+</html>

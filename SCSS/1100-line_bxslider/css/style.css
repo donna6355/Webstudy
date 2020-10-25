@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url(./reset.css);
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 66px;
+  background-color: #ff0;
+  border-bottom: 3px solid gray; }
+
+section {
+  margin-top: 69px;
+  /*헤더 포지션 오버랩을 피하려고*/ }
+section > .bx-wrapper {
+  position: relative; }
+section > .bx-wrapper .myslider {
+  height: 440px; }
+section > .bx-wrapper .myslider > li {
+  width: 100%;
+  height: 440px;
+  background-position: center top;
+  background-repeat: no-repeat; }
+section > .bx-wrapper .myslider > li.slide-1 {
+  background-image: url(../images/line_mainbanr_pc_001.png); }
+section > .bx-wrapper .myslider > li.slide-2 {
+  background-image: url(../images/line_mainbanr_pc_002.png); }
+section > .bx-wrapper .myslider > li.slide-3 {
+  background-image: url(../images/line_mainbanr_pc_003.png); }
+section > .bx-wrapper .myslider > li.slide-4 {
+  background-image: url(../images/line_mainbanr_pc_004.png); }
+section > .bx-wrapper .bx-controls-direction > a {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  width: 30px;
+  height: 58px;
+  margin-top: -29px;
+  text-indent: -9999px;
+  background-image: url(../images/line_mainbanr_btn_arr.png);
+  background-repeat: no-repeat; }
+section > .bx-wrapper .bx-controls-direction > a.bx-prev {
+  left: 5px;
+  background-position: -5px -141px; }
+section > .bx-wrapper .bx-controls-direction > a.bx-prev:hover {
+  background-position: -5px -209px; }
+section > .bx-wrapper .bx-controls-direction > a.bx-next {
+  right: 5px;
+  background-position: -5px -5px; }
+section > .bx-wrapper .bx-controls-direction > a.bx-next:hover {
+  background-position: -5px -73px; }
+section > .bx-wrapper .bx-pager {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  bottom: 17px;
+  width: 112px;
+  margin-left: -56px; }
+section > .bx-wrapper .bx-pager > .bx-pager-item {
+  width: 13px;
+  margin-left: -56px; }
+section > .bx-wrapper .bx-pager > .bx-pager-item > a {
+  display: block;
+  height: 13px;
+  text-indent: -9999px;
+  background-color: #ddd;
+  border-radius: 50%;
+  box-sizing: border-box; }
+section > .bx-wrapper .bx-pager > .bx-pager-item > a:hover, section > .bx-wrapper .bx-pager > .bx-pager-item > a.active {
+  background-color: #fff; }
+section > .bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  left: calc(50% + 80px);
+  bottom: 18px;
+  width: 10px;
+  height: 11px;
+  text-indent: -9999px;
+  background-image: url(./../images/controls.png);
+  background-position: -86px -11px;
+  background-repeat: no-repeat; }
+section > .bx-wrapper .bx-controls-auto .bx-start:hover, section > .bx-wrapper .bx-controls-auto .bx-start.active {
+  background-position: -86px 0; }
+section > .bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  left: calc(50% + 100px);
+  bottom: 18px;
+  width: 9px;
+  height: 11px;
+  text-indent: -9999px;
+  background-image: url(./../images/controls.png);
+  background-position: -86px -44px;
+  background-repeat: no-repeat; }
+section > .bx-wrapper .bx-controls-auto .bx-stop:hover, section > .bx-wrapper .bx-controls-auto .bx-stop.active {
+  background-position: -86px -33px; }
+
+footer > address {
+  height: 40px;
+  color: #fff;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+  background-color: #333; }
+
+/*# sourceMappingURL=style.css.map */

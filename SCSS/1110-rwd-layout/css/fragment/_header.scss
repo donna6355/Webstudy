@@ -1,0 +1,170 @@
+body {
+	#wrap {
+		> header {
+			position: relative;
+			z-index: 1000;
+			width: 100%;
+			//scss에서 변수 선언 - 무조건 $로 시작
+			$header-color: #2ecc71 !global; //!global 전역변수 선언
+			background-color: $header-color;
+			height: 75px;
+
+			//scss 문자보간법 #{};
+			@media #{$tablet} {
+				height: 130px;
+			}
+			@media #{$mobile} {
+				height: 170px;
+			}
+			> h1 {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 150px;
+				font-size: 20px;
+				background-color: $header-color;
+				@media #{$tablet} {
+					top: 50px;
+					width: 120px;
+				}
+				@media #{$mobile} {
+					left: 50%;
+					margin-left: -60px;
+				}
+				> a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 150px;
+					color: #fff;
+					font-family: '명조';
+					text-align: center;
+					text-transform: uppercase;
+					@media #{$mobile} {
+						height: 120px;
+					}
+				}
+			} //eo h1
+			> .btn-gnb {
+				display: none;
+
+				@media #{$tablet} {
+					&:hover + nav {
+						display: block;
+					}
+
+					//버튼을 스타일링 할때는 기본적으로 3가지 초기화 필요 >background, outline,border : none
+					display: initial;
+					position: absolute;
+					right: 10px;
+					top: 75px;
+
+					background: none;
+					outline: none;
+					border: none;
+
+					width: 30px;
+					height: 30px;
+					text-indent: -9999px;
+					background-image: url(../images/menu_toggle_btn.png);
+					background-repeat: no-repeat;
+				}
+			} //eo .btn-gnb
+
+			> nav {
+				position: absolute;
+				left: 200px;
+				top: 50%;
+				margin-top: -10px;
+				@media #{$tablet} {
+					display: none;
+					left: 0;
+					top: 130px;
+					width: 100%;
+					margin-top: 0;
+					border-top: 2px solid #555;
+				}
+				@media #{$mobile} {
+					top: 170px;
+				}
+				> .gnb {
+					//만약 전달할 인수가 없으면 괄호 생략 가능
+					@include flexLayOut();
+					// display: flex;
+					// flex-flow: row nowrap;
+					@media #{$tablet} {
+						display: initial;
+					}
+					> li {
+						@media #{$tablet} {
+							background-color: #fff;
+							border-bottom: 1px solid #dedede;
+							box-sizing: border-box;
+							&:last-child {
+								border-bottom: 2px solid #555;
+							}
+							&:hover {
+								background-color: #dedede;
+							}
+						}
+						> a {
+							display: block;
+							padding: 0 20px;
+							color: #fff;
+							@include textDeco;
+							text-transform: uppercase;
+							@media #{$tablet} {
+								padding: 10px 50px;
+								color: #222;
+							}
+						}
+					} //eo li
+				} //eo .gnb
+			} //eo nav
+			> .info {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-between;
+				position: absolute;
+				right: 30px;
+				top: 50%;
+				width: 120px;
+				@media #{$tablet} {
+					right: initial;
+					left: 0;
+					top: 0;
+					width: 100%;
+					margin-top: 0;
+					border-bottom: 1px solid #39d67c;
+					box-sizing: border-box;
+				}
+				> li {
+					width: 20px;
+					@include bgBasic;
+					// background-position: center center;
+					// background-repeat: no-repeat;
+					@media #{$tablet} {
+						width: 25%;
+					}
+					&:nth-child(1) {
+						background-image: url(./../images/info_icon_01.png);
+					}
+					&:nth-child(2) {
+						background-image: url(./../images/info_icon_02.png);
+					}
+					&:nth-child(3) {
+						background-image: url(./../images/info_icon_03.png);
+					}
+					&:nth-child(4) {
+						background-image: url(./../images/info_icon_04.png);
+					}
+					> a {
+						display: block;
+						height: 50px;
+						text-indent: -9999px;
+					}
+				} //eo li
+			} //eo .info
+		} //end of header
+	} // end of #wrap
+}

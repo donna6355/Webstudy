@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>870-textarea 여러줄 입력</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>본문내용 입력폼 textarea</h1>
+        <form action="./800-login_ok.html" method="post">
+            <fieldset>
+                <legend>상세정보</legend>
+                <label for="content">자유입력란 :</label>
+                <textarea class="ckeditor" name="content" id="content" cols="30" rows="3"></textarea>
+            </fieldset>
+            <p>
+                <button type="submit">전송</button>
+                <button type="reset">재입력</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

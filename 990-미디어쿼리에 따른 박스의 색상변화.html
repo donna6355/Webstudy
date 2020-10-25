@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>990-미디어쿼리에 따른 박스의 색상변화</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .box {
+            width: 1170px;
+            height: 100%;
+            margin: 0 auto;
+            background-color: #ff0;
+        }
+
+        /* 현재 사용중인 브라우저의 가로폭이 1200 이면 w:970, 파란배경 */
+        @media screen and (max-width:1200px) {
+            .box {
+                width: 970px;
+                background-color: #00f;
+            }
+        }
+
+        /* 현재 사용중인 브라우저의 가로폭이 992 이면 w:750, 핑크배경 */
+        @media screen and (max-width:992px) {
+            .box {
+                width: 750px;
+                background-color: pink;
+            }
+        }
+
+        /* 현재 사용중인 브라우저의 가로폭이 768 이면 w:100%, 초록배경 */
+        @media screen and (max-width:768px) {
+            .box {
+                width: 100%;
+                background-color: #0f0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

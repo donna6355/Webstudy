@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>530-float을 이용한 ol, ul 2중 메뉴</title>    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* 서브메뉴 ol에 position:absolute를 적용하여 문제를 해결하시오 */
+        #wrap{width:838px; margin:0 auto;}
+       
+        header>nav>.gnb>li{float:left;position:relative;width:200px;margin-right:10px;border:1px solid black;}
+        header>nav>.gnb>li:last-child{margin-right:0;}
+        
+        header>nav>.gnb>li>a{display:block;height:80px;line-height:80px;text-align:center;}
+        header>nav>.gnb>li:hover>a{color:white;background-color:green;}
+        
+        header>nav>.gnb ol{display:none;position:absolute;left:-999px;top:-999px;width:200px;}
+        header>nav>.gnb>li:hover>ol{display:block;position:absolute;left:-1px;top:80px;border:1px solid black;}
+        
+        header>nav>.gnb ol>li>a{display:block;height:80px;line-height:80px;text-align:center;background-color:white;}
+        header>nav>.gnb ol>li:hover>a{background-color:yellow;;}
+        
+        section>p{width:100%;height:500px;margin-top:20px;background-image:url(./images/background-640x423.jpg);background-size:cover;background-repeat:no-repeat;}
+
+        .clear{*zoom:1;}
+        .clear:after{display:block;clear:both;content:"";}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="text-center">한국전력</h1>
+            <nav>
+                <!-- global navigation bar -->
+                <ul class="gnb clear">
+
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ol>
+                            <li><a href="#">한전소개</a></li>
+                            <li><a href="#">사업소개</a></li>
+                            <li><a href="#">채용정보</a></li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <a href="#">기업센터</a>
+                        <!-- ol>li*4>a[href=#] -->
+                        <ol>
+                            <li><a href="#">에너지밸리</a></li>
+                            <li><a href="#">중소기업</a></li>
+                            <li><a href="#">동반성장</a></li>
+                            <li><a href="#">아이디어기술</a></li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <a href="#">홍보센터</a>
+                        <ol>
+                            <li><a href="#">전시/관람</a></li>
+                            <li><a href="#">문화</a></li>
+                            <li><a href="#">스포츠</a></li>
+                            <li><a href="#">공모전</a></li>
+                        </ol>
+                    </li>
+                    
+                    <li>
+                        <a href="#">지식센터</a>
+                        <ol>
+                            <li><a href="#">전기자료</a></li>
+                            <li><a href="#">전기알림마당</a></li>
+                            <li><a href="#">절전정보광장</a></li>
+                            <li><a href="#">전력용어</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <p></p>
+        </section>
+    </div>
+</body>
+</html>

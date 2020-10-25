@@ -1,0 +1,26 @@
+@import url(./reset.css);
+@import url(./header_footer.css);
+#wrap { width: 100%; margin: 0 auto; }
+#wrap > section { display: flex; flex-flow: row nowrap; justify-content: space-between; width: 1000px; margin: 163px auto 80px; }
+#wrap > section > .body { display: flex; flex-flow: column nowrap; align-items: center; width: 500px; }
+#wrap > section > .body > h2 { margin-bottom: 40px; color: #444; font-weight: 500; font-size: 40px; }
+#wrap > section > .body > img { display: block; width: auto; height: calc(219px * 1.1); margin-bottom: 32px; }
+#wrap > section > .body > .download { margin-bottom: 40px; }
+#wrap > section > .body > .download > a { display: inline-Block; width: 201px; height: 55px; text-indent: -9999px; background-repeat: no-repeat; background-size: 100% 100%; }
+#wrap > section > .body:first-child > .download > a:first-child { margin-right: 10px; background-image: url(../images/line_download_btn_1.png); }
+#wrap > section > .body:first-child > .download > a:last-child { background-image: url(../images/line_download_btn_2.png); }
+#wrap > section > .body:last-child > .download > a { background-image: url(../images/line_download_btn_3.png); }
+#wrap > section > .body > .icon > li { float: left; opacity: 0.6; }
+#wrap > section > .body > .icon > li:hover { opacity: 1; }
+#wrap > section > .body > .icon > li > a { display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; width: 100px; height: 90px; color: #6f6f6f; font-weight: 500; font-size: 13px; }
+#wrap > section > .body > .icon > li > a:before { display: block; width: 51px; height: 48px; background-repeat: no-repeat; content: ""; }
+#wrap > section > .body:first-child > .icon > li:first-child > a:before { background-image: url(../images/line_download_icon_1.png); background-position: 6.5px 3.5px; }
+#wrap > section > .body:first-child > .icon > li:last-child > a:before { background-image: url(../images/line_download_icon_2.png); background-position: 7.5px 4.5px; }
+#wrap > section > .body:last-child > .icon > li:nth-child(1) > a:before { background-image: url(../images/line_download_icon_3.png); background-position: 4.5px 0; }
+#wrap > section > .body:last-child > .icon > li:nth-child(2) > a:before { background-image: url(../images/line_download_icon_4.png); background-position: 0 3px; }
+#wrap > section > .body:last-child > .icon > li:nth-child(3) > a:before { background-image: url(../images/line_download_icon_5.png); background-position: 6.5px 5px; }
+#wrap > section > .body .underline { margin: 16px auto 80px; opacity: 0.6; }
+#wrap > section > .body .underline > a { color: #6f6f6f; font-weight: 500; font-size: 13px; border-bottom: 1px solid #6f6f6f; }
+#wrap > section > .body .underline:hover { opacity: 1; }
+
+/*# sourceMappingURL=dnld_style.css.map */

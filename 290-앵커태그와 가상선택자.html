@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>290-앵커태그와 가상선택자</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <style>
+        a:link{color:orange;text-decoration:none;}
+        /* 앵커태그의 href 속성이 설정된 경우 */
+
+        a:visited{color:green;}
+        /* 앵커태그에 설정된 href 주소로 한번이라도 방문한 기록이 브라우저에 저장되어 있는 경우 */
+        
+        a:hover{color:red;text-decoration:underline;}
+        /* 앵커태그의 영역 안으로 마우스 포인터가 진입(mouseenter)한 경우 */
+
+        a:active{color:blue;}
+        /* 호버한 상태에서 마우스 왼쪽 버튼을 클릭하고 있는 경우 */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>전천후 태그 a</h1>
+        <a href="#">
+            <h1>html5에서 앵커태그는 블럭요소를 자식으로 가질 수 있다.</h1>
+        </a>
+        <span>
+            <h2>인라인요소가 블럭요소를 감싸면 유효성 검사에서 오류 발생</h2>
+        </span>
+    </div>
+</body>
+</html>

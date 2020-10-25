@@ -1,0 +1,16 @@
+@import url(./reset.css);
+@import url(./header_footer.css);
+#wrap > section { width: 1000px; margin: 63px auto; }
+#wrap > section > .main > li { display: flex; flex-flow: column wrap; align-content: space-between; width: 1000px; height: 300px; border-bottom: 1px solid #ddd; }
+#wrap > section > .main > li:nth-child(5) { height: 320px; }
+#wrap > section > .main > li > img { display: block; width: 190px; height: 190px; margin: 55px 0; }
+#wrap > section > .main > li > h2 { width: 755px; margin-top: 65px; color: #444; font-weight: 500; font-size: 40px; }
+#wrap > section > .main > li > p { width: 755px; margin-top: 15px; color: #444; line-height: 1.5; font-size: 14px; }
+#wrap > section > .main > li > .cont > a { position: relative; display: inline-block; width: 100px; height: 26px; margin: 16px 8px 0 0; color: #fff; font-size: 13px; line-height: 26px; text-indent: 8px; background-color: #777; }
+#wrap > section > .main > li > .cont > a:after { position: absolute; right: 1px; top: 1px; display: inline-block; width: 25px; height: 24px; background-image: url(../images/line_00_button.png); background-repeat: no-repeat; content: ""; }
+#wrap > section > article { width: 1000px; height: 280px; margin: 0 auto; background-image: url(../images/line_game_btm.png); background-repeat: no-repeat; background-position: 82% 20%; }
+#wrap > section > article > h3 { margin: 56px 0 24px; color: #444; font-size: 28px; font-weight: 400; }
+#wrap > section > article > p { color: #444; font-size: 14px; }
+#wrap > section > article > a { display: block; margin-top: 24px; color: blue; font-size: 14px; text-decoration: underline; }
+
+/*# sourceMappingURL=game_style.css.map */

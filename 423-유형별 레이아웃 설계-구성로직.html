@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{width:660px;margin:30px auto;*zoom:1;}
+        #wrap:after{display:block;clear:both;content:"";}
+
+        section,aside{float:left;}
+        section>.up>.left,section>.up>.middle,section>.up>.right,section>.down{float:left;}
+
+        section>.up>.left{width:220px;height:220px;margin-right:20px;background-color:cadetblue;}
+        section>.up>.left>p{padding-top:100px;color:white;font-weight:bold;text-align:center;}
+
+        section>.up>.middle>p,section>.up>.right>p{width:100px;height:55px;margin-right:20px;margin-bottom:20px;padding-top:45px;color:white;font-weight:800;text-align:center;background-color:yellowgreen;}
+
+        section>.down{width:460px;height:220px;background-color:magenta;}
+        section>.down>p{color:white;font-weight:800;text-align:center;padding-top:105px;}
+        
+        aside{width:150px;height:460px;background-color:orange;}
+        aside>p{color:white;font-weight:800;text-align:center;padding-top:225px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section>
+            <div class="up">
+                <div class="left">
+                    <p>normal<br />(untagged)</p>
+                </div>
+                <div class="middle">
+                    <p>half</p>
+                    <p>half</p>
+                </div>
+                <div class="right">
+                    <p>half</p>
+                    <p>half</p>
+                </div>
+            </div>
+            <div class="down">
+                <p>double</p>
+            </div>
+        </section>
+        <aside>
+            <p>tall</p>
+        </aside>
+    </div>
+</body>
+</html>

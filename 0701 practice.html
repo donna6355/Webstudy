@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>double structure</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{width:830px;margin:0 auto;}
+        h1>a{display:block;}
+
+        section>nav>ul{*zoom:1;}
+        section>nav>ul:after{display:block;clear:both;content:"";}
+        section>nav>ul>li{float:left;position:relative;width:200px;margin-right:10px;border:1px solid #888;box-sizing:border-box;}
+        section>nav>ul>li:last-child{margin-right:0;}
+        section>nav>ul>li>a{display:block;height:50px;line-height:50px;text-align:center;}
+        section>nav>ul>li:hover>a{color:#fff;font-weight:900;background-color: #df5;}
+
+        section>nav>ul>li>ol{position:absolute;left:-9999px;top:-9999px;width:200px;}
+        section>nav>ul>li:hover>ol{position:absolute;left:-1px;top:50px;border:1px solid #888;box-sizing:border-box;}
+        section>nav ol>li>a{display:block;height:50px;line-height:50px;text-align:center;background-color: #fff;}
+        section>nav ol>li:hover>a{color:#999;font-weight:900;background-color: lightblue;}
+
+        p{position: relative;margin:30px auto;}
+        p>a{display:block;position:absolute;height:400px;}
+        p>a>img{display:block;width:830px;height:400px;}
+
+
+        p>a:nth-child(1):after{display:block;position:absolute;left:400px;width:15px;height:15px;content:"1";color:#fff;font-weight:900;background-color: #222222;border-radius:5px;text-align:center;}
+        p>a:nth-child(2):after{display:block;position:absolute;left:420px;width:15px;height:15px;content:"2";color:#fff;font-weight:900;background-color: #222222;border-radius:5px;text-align:center;}
+        p>a:nth-child(3):after{display:block;position:absolute;left:440px;width:15px;height:15px;content:"3";color:#fff;font-weight:900;background-color: #222222;border-radius:5px;text-align:center;}
+        p>a:nth-child(4):after{display:block;position:absolute;left:460px;width:15px;height:15px;content:"4";color:#fff;font-weight:900;background-color: #222222;
+        border-radius:5px;text-align:center;}
+
+        footer{margin-top:450px;}
+        footer>address{text-align:center;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><a href="#" class="text-center">한국전력</a></h1>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Company</a>
+                        <ol>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Identity</a></li>
+                            <li><a href="#">Environment</a></li>
+                            <li><a href="#">Recruitment</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Company</a>
+                        <ol>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Identity</a></li>
+                            <li><a href="#">Environment</a></li>
+                            <li><a href="#">Recruitment</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Company</a>
+                        <ol>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Identity</a></li>
+                            <li><a href="#">Environment</a></li>
+                            <li><a href="#">Recruitment</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Company</a>
+                        <ol>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Identity</a></li>
+                            <li><a href="#">Environment</a></li>
+                            <li><a href="#">Recruitment</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <p>
+                <a href=""><img src="./images/AffinityMapping.jpg" alt="what?"></a>
+                <a href=""><img src="./images/1275.jpg" alt="what?"></a>
+                <a href=""><img src="./images/astronomy Untitled-1.jpg" alt="what?"></a>
+                <a href=""><img src="./images/background-640x423.jpg" alt="what?"></a>
+            </p>
+        </section>
+        <footer>
+            <address>Designed by Tigger XD</address>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델의 형태</title>
+    <link rel="shortcut icon" href="images/my favicon.ico" type="image/x-icon">
+    <style>
+        *{margin:0; padding:0;}
+        /* *selector will apply to all */
+
+        h1{display:block; display:inline; border:1px solid red;}
+        /* > : 직계자식 연산자 */
+        div>p{display:block; display:inline; width:250px; height:50px; border:1px solid blue;}
+
+        /* + : 인접동기(형제) 연산자 */
+        div+p{display:block; display:inline; border:1px solid green;}
+        /* div와 형제이면서 바로 다음에 나오는 p태그*/
+
+        /* ~ : 인접동기(형제) 연산자*/
+        div~p{display:block; display:inline; color:red;}
+        /* div와 형제이면서 바로 이후에 나오는 모든 p태그 */
+
+        hr{display:block; display:inline; height:10px; border:1px solid black;}
+
+        span{display:inline; display:block; width:300px; height:70px; background-color:yellow; border:1px solid blue;}
+    </style>
+</head>
+
+<body>
+    <h1>웹브라우저는 모든 html요소(태그)를 하나의 박스로 표현</h1>
+
+    <div>
+        <p>첫번째 블럭요소</p>
+        <p>두번째 블럭요소</p>
+        <p>세번째 블럭요소</p>
+    </div>
+
+    <p>네번째 블럭요소</p>
+    <p>다섯번째 블럭요소</p>
+
+<hr />
+
+<span>나는 인라인요소 스팬1</span>
+<span>나는        인라인요소   스팬2</span>
+<span>나는  인라인요소          스팬3</span>
+
+</body>
+</html>

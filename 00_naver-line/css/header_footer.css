@@ -1,0 +1,27 @@
+@import url(./reset.css);
+#wrap { width: 100%; margin: 0 auto; }
+#wrap * { font-family: 'nanumgothic'; }
+#wrap header { position: fixed; left: 0; top: 0; z-index: 1000; width: 100%; height: 60px; border-bottom: 3px solid #3b3b3b; background-color: #fff; }
+#wrap header > .cover { position: relative; z-index: 1000; width: 1000px; margin: 0 auto; }
+#wrap header > .cover > h1 > a { position: absolute; left: 10px; top: 18px; width: 70px; height: 25px; text-indent: -9999px; background-image: url(../images/line_00_h1_logo.png); background-size: contain; background-repeat: no-repeat; }
+#wrap header > .cover > .gnb { position: absolute; left: 80px; top: 22px; }
+#wrap header > .cover > .gnb > li { float: left; }
+#wrap header > .cover > .gnb > li:last-child > a { border-right: none; }
+#wrap header > .cover > .gnb > li > a { display: block; padding: 0 15px; color: #444; font-weight: 400; font-size: 13px; border-right: 1px solid #444; }
+#wrap header > .cover > .gnb > li > a.active { font-weight: 600; }
+#wrap header > .cover > select { position: absolute; right: 5px; top: 18px; height: 24px; color: #777; line-height: 24px; outline: none; }
+#wrap footer { display: flex; flex-flow: column nowrap; justify-content: space-around; width: 100%; height: 140px; padding: 20px 0; background-color: #3b3b3b; }
+#wrap footer > ul { width: 1000px; margin: 0 auto; }
+#wrap footer > ul > li { float: left; }
+#wrap footer > ul > li:first-child > a { padding-left: 0; }
+#wrap footer > ul > li:last-child > a { border-right: none; }
+#wrap footer > ul > li > a { display: block; height: 12px; padding: 0 12px; color: rgba(255, 255, 255, 0.4); font-weight: 300; font-size: 13px; line-height: 12px; border-right: 0.5px solid rgba(255, 255, 255, 0.2); }
+#wrap footer > .sns { width: 1000px; margin: 0 auto; display: flex; flex-flow: row nowrap; align-items: center; }
+#wrap footer > .sns > a { display: block; text-indent: -9999px; background-image: url(../images/line_00_sprite.png); background-repeat: no-repeat; }
+#wrap footer > .sns > a:first-child { width: 28px; height: 20px; background-position: -1050px -5px; margin-right: 20px; }
+#wrap footer > .sns > a:last-child { width: 28px; height: 28px; background-position: -818px -1px; }
+#wrap footer > address { width: 1000px; margin: 0 auto; color: rgba(255, 255, 255, 0.4); font-size: 13px; }
+#wrap .clear { *zoom: 1; }
+#wrap .clear:after { display: Block; clear: both; content: ""; }
+
+/*# sourceMappingURL=header_footer.css.map */

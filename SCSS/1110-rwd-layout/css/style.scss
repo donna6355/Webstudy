@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+//css에서는 url()을 통해서 import해야하지만, scss에서는 생략 가능
+@import './reset.css';
+
+$width-tablet: 992px;
+$width-mobile: 768px;
+
+$tablet: 'screen and (max-width:'+$width-tablet+')';
+$mobile: 'screen and (max-width:768px)';
+
+//믹신 - 반복되는 코드를 재사용할 때 유용
+@mixin textDeco() {
+	font-weight: 600;
+	font-size: 16px;
+}
+@mixin bgBasic {
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+//믹신함수 - 매개변수로 값 전달
+@mixin flexLayOut($direction:row,$wrap:nowrap) {
+	display: flex;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+}
+
+//여러파일 동시에 가져오기
+//조각파일은 반드시 _로 시작!
+//scss 파일일 경우 확장자(.scss) 생략 가능
+@import './fragment/_header', './fragment/_footer';
+
+//여러 모든 페이지의 #wrap에 공통적으로 적용할 코드
+body {
+	#wrap {
+		width: 1200px;
+		margin: 0 auto;
+		// background-color: $header-color;
+		@media #{$tablet} {
+			width: 100%;
+		}
+	}
+} //end of body
+
+body#home {
+	> #wrap {
+		> section {
+			@include flexLayOut(row,wrap); //협업시 모든 인자를 써 주는게 좋다.
+			> article.slide {
+				order: 100;
+				width: 600px;
+				height: 460px;
+				background-image: url(../images/slider_01.jpg);
+				@include bgBasic;
+				@media #{$tablet} {
+					width: 60%;
+					height: 400px;
+				}
+				@media #{$mobile} {
+					width: 100%;
+					height: 350px;
+				}
+			} //eo .slide
+			$bgc: green;
+			> article.gallery {
+				order: 200;
+				width: 300px;
+				height: 370px;
+				padding: 45px 0;
+				$bgc: #cf2424;
+				//!default : 변수의 값을 설정하겠지만 혹시 기존 변수가 있을 경우 현재 설정하는 값은 사용하지 않겠다.
+				background-color: $bgc;
+				@media #{$tablet} {
+					width: 70%;
+					height: 180px;
+					@include flexLayOut(row, nowrap);
+					justify-content: space-around;
+				}
+				@media #{$mobile} {
+					width: 100%;
+					height: auto;
+					display: initial;
+				}
+				> figure {
+					height: 185px;
+					color: #fff;
+					text-align: center;
+					@include textDeco();
+					// &:last-child {
+					// 	margin-top: 30px;
+					// }
+					@media #{$mobile} {
+						width: 100%;
+						height: initial;
+						margin-bottom: 20px;
+					}
+					> .frame {
+						display: block;
+						width: 200px;
+						margin: 0 auto 20px;
+						@media #{$mobile} {
+							width: 70%;
+							height: initial;
+						}
+						> img {
+							display: block;
+							width: 100%;
+						}
+					}
+				} //eo figure
+			} //eo .gallery
+			> article.rankup {
+				order: 300;
+				width: 300px;
+				height: 460px;
+				background-color: #1795d8;
+				@media #{$tablet} {
+					order: 150;
+					width: 40%;
+					height: 400px;
+				}
+				@media #{$mobile} {
+					width: 100%;
+					height: initial;
+				}
+				> h3 {
+					margin-top: 60px;
+					color: #fff;
+					font-size: 20px;
+					text-align: center;
+				}
+				> ul {
+					width: 110px;
+					margin: 20px auto;
+					@media #{$tablet} {
+						width: 90%;
+						height: 60%;
+						@include flexLayOut(row, wrap);
+					}
+					@media #{$mobile} {
+						margin-bottom: 40px;
+					}
+					> li {
+						list-style: decimal;
+						@include textDeco();
+						color: #fff;
+						@media #{$tablet} {
+							width: 40%;
+							padding: 0 5%;
+							min-width: 110px;
+							list-style: none;
+						}
+						@media #{$mobile} {
+							margin-bottom: 8px;
+						}
+						> a {
+							color: #fff;
+							line-height: 30px;
+							@media #{$tablet} {
+								display: block;
+								padding: 5%;
+								border: 1px solid #fff;
+								border-radius: 8px;
+								text-align: center;
+							}
+						}
+					}
+				}
+			} //eo article.rankup
+			> article.latest {
+				order: 400;
+				width: 350px;
+				height: 270px;
+				background-color: orange;
+				@media #{$tablet} {
+					order: 170;
+					width: 40%;
+				}
+				@media #{$mobile} {
+					width: 100%;
+				}
+				> h3 {
+					height: 70px;
+					color: #fff;
+					line-height: 70px;
+					text-align: center;
+				}
+				> ul {
+					> li {
+						width: 70%;
+						margin: 0 auto;
+						list-style: circle;
+						color: #fff;
+						> a {
+							display: block;
+							overflow: hidden;
+							height: 30px;
+							line-height: 30px;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							color: #fff;
+							@include textDeco;
+						}
+					}
+				}
+			} //end of .latest
+			> article.popular {
+				order: 500;
+				width: 350px;
+				height: 270px;
+				background-color: #714185;
+				@media #{$tablet} {
+					order: 170;
+					width: 40%;
+				}
+				@media #{$mobile} {
+					width: 100%;
+				}
+				> h3 {
+					height: 70px;
+					color: #fff;
+					line-height: 70px;
+					text-align: center;
+				}
+				> ul {
+					> li {
+						width: 70%;
+						margin: 0 auto;
+						list-style: circle;
+						color: #fff;
+						> a {
+							display: block;
+							overflow: hidden;
+							height: 30px;
+							line-height: 30px;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							color: #fff;
+							@include textDeco;
+						}
+					}
+				}
+			} //end of .popular
+			> article.banner {
+				order: 600;
+				width: 300px;
+				height: 270px;
+				@media #{$tablet} {
+					width: 30%;
+				}
+				@media #{$mobile} {
+					width: 100%;
+				}
+				> div {
+					height: 135px;
+				}
+				> .banner01 {
+					background-color: #af3434;
+					background-image: url(../images/w3c_logo.png);
+					@include bgBasic();
+					text-indent: -9999px;
+				}
+				> .banner02 {
+					position: relative;
+					background-color: #744040;
+
+					/*					@include flexLayOut(row ,nowrap );
+					justify-content: center;
+					align-items: center;
+					*/
+					> ul {
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						width: 150px;
+						margin: -30px 0 0 -75px;
+						@include flexLayOut(row,nowrap);
+						justify-content: space-between;
+						> li {
+							width: 43px;
+							&:nth-child(1) {
+								background-image: url(../images/html_logo.png);
+							}
+							&:nth-child(2) {
+								background-image: url(../images/css_logo.png);
+							}
+							&:nth-child(3) {
+								background-image: url(../images/js_logo.png);
+							}
+							> a {
+								display: block;
+								height: 60px;
+								text-indent: -9999px;
+							}
+						}
+					}
+				}
+			} //end of .banner
+			> article.social {
+				order: 700;
+				width: 200px;
+				background-color: #feffc2;
+				position: relative;
+				// @include flexLayOut(row, nowrap);
+				// justify-content: center;
+				// align-items: center;
+				@media #{$tablet} {
+					order: 180;
+					width: 20%;
+				}
+				@media #{$mobile} {
+					order: 700;
+					width: 100%;
+					height: initial;
+				}
+				> ul {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					margin: -100px 0 0 -27px;
+					height: 200px;
+					@include flexLayOut(column,nowrap );
+					justify-content: space-between;
+					@media #{$mobile} {
+						position: static;
+						margin: 0;
+						flex-direction: row;
+						height: 100px;
+						justify-content: space-around;
+					}
+					> li {
+						width: 55px;
+						@include bgBasic();
+						&:nth-child(1) {
+							background-image: url(../images/social_icon_01.png);
+						}
+						&:nth-child(2) {
+							background-image: url(../images/social_icon_02.png);
+						}
+						&:nth-child(3) {
+							background-image: url(../images/social_icon_03.png);
+						}
+						> a {
+							display: block;
+							height: 55px;
+							text-indent: -9999px;
+							@media #{$mobile} {
+								height: 100%;
+							}
+						}
+					}
+				}
+			} //end of .social
+		} //eo section
+	}
+} //eo body#main
+
+//#about페이지에 대한 css
+body#about {
+	> #wrap {
+	}
+} //eo #about

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>920-hover 했을 때 길이 늘리기</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        ul{display:flex;justify-content:space-between;width:800px;margin:0 auto;}
+        ul>li{display:flex;width:150px;height:50px;justify-content: center;align-items:center;color:#fff;font-weight:800;background-color: #ff0000;transition:all 1s;}
+        ul>li:hover{height:400px;color:#333;background-color: #ff0;}
+        /* 요소의 형태/색상등이 변경될 때 CSS3 transition속성을 적용하여 변화하는 단계들의 움직임을 생성할 수 있다. */
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">CSS3 트랜지션</h1>
+        <ul>
+            <li>메뉴-1</li>
+            <li>메뉴-2</li>
+            <li>메뉴-3</li>
+            <li>메뉴-4</li>
+            <li>메뉴-5</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>340-attribute selector</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        h1{height:100px;line-height:100px;text-align:center;}
+        p{text-align:center;}
+        p>a{display:block;font-size:20px;line-height:40px;}
+        
+        /*target속성을 가진 a*/
+        a[target]{background-color:yellow;}
+        
+        /* href="http://naver.com" 값을 가진 [속성명+값]이 일치하는 a */
+        a[href="http://naver.com"]{color:red;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>태그의 속성을 이용한 CSS선택</h1>
+        <p>
+            <a href="#" target="_blank">네이버</a>
+            <a href="http://naver.com/">네이버</a>
+            <a href="http://naver.com">네이버</a>
+            <a href="http://naver.com/" title="naver">네이버</a>
+        </p>
+    </div>
+</body>
+</html>

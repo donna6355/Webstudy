@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>페이지에 영상넣기</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .video_container {
+            overflow: hidden;
+            width: 780px;
+            height: 440px;
+            margin: 0 auto 100px
+        }
+
+        video {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1 class="text-center">페이지에 영상넣기</h1>
+        <div class="video_container">
+            <!-- 2018.05 autoplay기능은 크롬 자체에서 막음. 
+            해결법 : muted -->
+            <!-- 동영상 계속 반복 loop -->
+            <video loop muted autoplay controls src="./media/kakaopage.mp4" />
+        </div>
+        <div class="video_container">
+            <!-- 실무에서 사용하는 방법 -->
+            <video controls poster="./images/1275.jpg">
+                <source src="./media/kakaopage.mp4" type="video/mp4" />
+                <source src="./media/kakaopage.ogg" type="video/ogg" />
+                <source src="./media/kakaopage.webm" type="video.webm" />
+                브라우저가 HTML 5 Video 태그를 지원하지 않습니다.
+            </video>
+        </div>
+        <!-- youtube video clip -->
+        <div class="video_container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/b1MJVZH3f8w" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

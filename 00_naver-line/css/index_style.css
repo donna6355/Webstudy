@@ -1,0 +1,40 @@
+@import url(./reset.css);
+@import url(./header_footer.css);
+#wrap { width: 100%; margin: 0 auto; }
+#wrap * { font-family: 'nanumgothic'; }
+#wrap section { width: 100%; margin: 63px auto 0; }
+#wrap section > .bx-wrapper { position: relative; left: 0; top: 0; }
+#wrap section > .bx-wrapper .slidebanner { width: 100%; }
+#wrap section > .bx-wrapper .slidebanner > .slide01 { position: relative; height: 440px; background-image: url(../images/line_main_banner_1.png); background-position: -600px 0; background-repeat: no-repeat; }
+#wrap section > .bx-wrapper .slidebanner > .slide01 > a { display: block; width: 95px; height: 33px; position: absolute; left: 270px; bottom: 112px; text-indent: -9999px; border: 1px solid rgba(255, 255, 255, 0.3); }
+#wrap section > .bx-wrapper .slidebanner > .slide02 { position: relative; height: 440px; background-image: url(../images/line_main_banner_2.png); background-position: -600px 0; background-repeat: no-repeat; }
+#wrap section > .bx-wrapper .slidebanner > .slide02 > a { display: block; width: 114px; height: 33px; position: absolute; left: 269px; bottom: 94px; text-indent: -9999px; border: 1px solid rgba(255, 255, 255, 0.3); }
+#wrap section > .bx-wrapper .slidebanner > .slide02 > a:last-child { left: calc(114px + 269px + 11px); }
+#wrap section > .bx-wrapper .slidebanner > .slide03 { position: relative; height: 440px; background-image: url(../images/line_main_banner_3.png); background-position: -600px 0; background-repeat: no-repeat; }
+#wrap section > .bx-wrapper .slidebanner > .slide03 > a { display: block; width: 114px; height: 33px; position: absolute; left: 269px; bottom: 90px; text-indent: -9999px; border: 1px solid rgba(255, 255, 255, 0.3); }
+#wrap section > .bx-wrapper .slidebanner > .slide03 > a:last-child { left: calc(114px + 269px + 11px); }
+#wrap section > .bx-wrapper .slidebanner > .slide04 { position: relative; height: 440px; background-image: url(../images/line_main_banner_4.png); background-position: -600px 0; background-repeat: no-repeat; }
+#wrap section > .bx-wrapper .slidebanner > .slide04 > a { display: block; width: 140px; height: 33px; position: absolute; left: 270px; bottom: 90px; text-indent: -9999px; border: 1px solid rgba(255, 255, 255, 0.3); }
+#wrap section > .bx-wrapper .bx-prev { display: none; }
+#wrap section > .bx-wrapper .bx-next { display: none; }
+#wrap section > .bx-wrapper .bx-pager { display: flex; width: 120px; flex-flow: row nowrap; justify-content: space-between; position: absolute; left: calc(50% - 60px); bottom: 15px; z-index: 1000; }
+#wrap section > .bx-wrapper .bx-pager a { display: block; width: 12px; height: 12px; text-indent: -9999px; background-color: rgba(255, 255, 255, 0.3); border-radius: 50%; }
+#wrap section > .bx-wrapper .bx-pager a.active { background-color: #fff; }
+#wrap section > .cont { width: 1000px; margin: 60px auto 0; }
+#wrap section > .cont > .body { display: flex; flex-flow: column wrap; align-content: space-around; width: 100%; height: 556px; margin-bottom: 80px; }
+#wrap section > .cont > .body:nth-child(even) > img { order: 100; }
+#wrap section > .cont > .body > img { display: block; width: 450px; height: 556px; }
+#wrap section > .cont > .body > h2 { width: 450px; margin: 40px 0 15px; color: #444; font-weight: 400; font-size: 55px; line-height: 1.1; }
+#wrap section > .cont > .body > p { width: 450px; color: #444; font-size: 14px; line-height: 2; }
+#wrap section > .cont > .subcont { width: 100%; margin-bottom: 80px; }
+#wrap section > .cont > .subcont > ul { display: flex; flex-flow: row wrap; justify-content: left; }
+#wrap section > .cont > .subcont > ul > li { width: calc(100% / 3); margin: 20px 0; }
+#wrap section > .cont > .subcont > ul > li > img { display: block; width: 176px; }
+#wrap section > .cont > .subcont > ul > li > h3 { margin: 8px 0; color: #444; font-weight: 600; font-size: 16px; line-height: 2; }
+#wrap section > .cont > .subcont > ul > li:first-child > h3 { display: flex; flex-flow: row nowrap; align-items: center; }
+#wrap section > .cont > .subcont > ul > li:first-child > h3 > a { display: inline-block; width: 14px; height: 14px; margin-left: 4px; text-indent: -9999px; background-image: url(../images/line_00_sprite.png); background-position: -881px 0; background-repeat: no-repeat; }
+#wrap section > .cont > .subcont > ul > li > p { color: #444; font-size: 14px; line-height: 1.7; }
+#wrap .clear { *zoom: 1; }
+#wrap .clear:after { display: Block; clear: both; content: ""; }
+
+/*# sourceMappingURL=index_style.css.map */

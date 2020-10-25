@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+h1 {
+	line-height: 100px;
+	text-align: center;
+}
+
+ul {
+	display: flex;
+	width: 980px;
+	margin: 0 auto;
+
+	>li{
+		width: 140px;
+		overflow: hidden;
+		transition: all 0.5s;
+
+		&:hover{
+			width: 680px;
+		}
+	}
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>390-float을 이용한 박스 나열</title>    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        #wrap{
+            width:850px;
+            margin:0 auto;
+            padding-bottom:100px;
+            outline:1px solid red;/*박스크기에 미포함*/
+        }
+
+        .parent{*zoom:1;}
+        .parent:after{
+            display:block;
+            clear:both;
+            content:'';
+        }
+
+
+        .parent>li{
+            width:200px;
+            height:100px;
+            border:1px solid black;
+        }
+
+        .parent>li:nth-child(odd){background-color:yellow;}
+        .parent>li:nth-child(even){background-color:green;}
+
+        .parent>li:nth-child(1){float:left;}
+        .parent>li:nth-child(2){float:left;}
+        .parent>li:nth-child(3){float:left;}
+        .parent>li:nth-child(4){float:left;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">float을 이용한 박스나열</h1>
+
+        <ul class="parent">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <!-- <div style="clear:both;"></div> 단점 : 쓸데없이 태그가 하나 추가됨 -->
+
+        <!-- <p style="clear:both;">안녕1~!</p> -->
+        <p>안녕2~!</p>
+
+        <hr />
+
+        <style>
+            /* 
+                아래의 li를 180*90, 파란테두리를 안쪽으로 생성해서
+                가로로 나열해 보세요. (가세정렬)
+                짝수번째 박스의 배경색을 핑크, 홀수는 파랑으로 합니다.
+            */
+            .subject{*zoom:1;}
+
+            .subject:after{
+                display:block;
+                clear: both;
+                content: '';
+            }
+
+            .subject>li{
+                float: left;
+                width: 180px;
+                height: 90px;
+                border:1px solid blue;
+                box-sizing: border-box;
+            }
+
+
+            .subject>li:nth-child(2n+1){background-color:blue;}
+            .subject>li:nth-child(2n){background-color:pink;}
+        </style>
+
+        <ol class="subject">
+            <li>포토샵</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ol>
+
+        <p>추천과목</p>
+
+        <hr />
+
+        <style>
+            /* 박스사이즈 120*100 만들어서 플롯하세요 */
+            .test{*zoom:1;}
+            .test:after{
+                display:block;
+                clear:both;
+                content:'';
+            }
+            .test>span{
+                /* display:block; */
+                float:left;
+                width:120px;
+                height:100px;
+                line-height:100px;
+                text-align:center;
+            }
+        </style>
+
+        <div class="test">
+            <span style="background-color:red;">red</span>
+            <span style="background-color:blue;">blue</span>
+            <span style="background-color:green;">green</span>
+            <span style="background-color:yellow;">yellow</span>
+            <span style="background-color:pink;">pink</span>
+        </div>
+        <p>테스트</p>
+
+        <hr>
+
+        <style>
+            .cup{*zoom:1;}
+            .cup:after{
+                display: block;
+                clear: both;
+                content: '';
+            }
+            .cup>li{float:left;width:100px;height:50px;}
+            .cup>li:nth-child(1){background-color: blue;}
+            .cup>li:nth-child(2){background-color: red;}
+            .cup>li:nth-child(3){background-color: green;}
+            .cup>li:nth-child(4){background-color: yellow;}
+        </style>
+
+        <ol class="cup">
+            <li>머그컵</li>
+            <li>종이컵</li>
+            <li>물컵</li>
+            <li>양치컵</li>
+        </ol> 
+        <p>시원한 물</p>       
+    </div>
+</body>
+</html>

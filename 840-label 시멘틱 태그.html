@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>840-label 시멘틱 태그</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <style>
+        * {margin:0;padding:0;}
+        h1,form,legend,dl,p{margin: 20px;}
+
+        dl>dt{float:left;margin-right:10px;}
+        dl>dd{float:left;}
+
+        .clear{*zoom:1;}
+        .clear:after{display:block;clear:both;content:"";}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>주문정보</h1>
+        <form action="./800-login_ok.html">
+            <fieldset>
+                <legend>상품주문정보</legend>
+                <dl class="clear">
+                    <dt><label for="ordername">이름 :</label></dt>
+                    <dd><input type="text" id="ordername" name="ordername"></dd>
+                </dl>
+                <dl class="clear">
+                    <dt><label for="hp">연락처 :</label></dt>
+                    <dd><input type="text" id="hp" name="hp"></dd>
+                </dl>
+                <dl class="clear">
+                    <dt><label for="addr">주소 :</label></dt>
+                    <dd><input type="text" id="addr" name="addr"></dd>
+                </dl>
+            </fieldset>
+            <p>
+                <button type="submit">전송</button>
+                <button type="reset">재입력</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

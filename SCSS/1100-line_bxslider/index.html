@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>line_bxslider</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+		$(function () {
+			$('.myslider').bxSlider({
+				mode: "fade", //horizontal (기본값) fade
+				auto: true, //자동으로 슬라이딩 시작 여부
+				autoControls: true, //시작,정지 컨트롤 버튼 노출
+				pager: true, //하단에 인디케이터 노출
+			});
+
+			// $(function () {
+			// 	$('.myslider').bxSlider({
+			// 		auto: true, //자동으로 슬라이딩 시작 여부
+			// 		autoControls: true, //시작,정지 컨트롤 버튼 노출
+			// 		pager: ture, //하단에 인디케이터 노출
+			// 	});
+		});
+		//]]>
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>헤더영역</header>
+		<section>
+			<ul class="myslider">
+				<li class="slide-1">1번 슬라이드</li>
+				<li class="slide-2">2번 슬라이드</li>
+				<li class="slide-3">3번 슬라이드</li>
+				<li class="slide-4">4번 슬라이드</li>
+			</ul>
+		</section>
+		<footer>
+			<address>Designed by Donna:P</address>
+		</footer>
+	</div>
+</body>
+
+</html>

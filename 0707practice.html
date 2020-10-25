@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transform transitions animation</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{width:500px;margin:0 auto;}
+        span{display:block;width:100px;height:100px;margin:100px;background-color: #999;line-height:100px;text-align:center;}
+        .trans{transform:translate(30px,30px);
+        transform:rotate(60deg);
+        transform:scale(2,2);
+        transform:skew(-30deg,30deg);
+        }
+        .dtrans{
+            transform:rotatex(30deg);
+            transform:rotatey(90deg);
+            transform:rotatez(90deg);
+        }
+
+        .ctrans{transition:width 3s, height 3s, transform 3s;
+        transition-delay:1s;}
+        .ctrans:hover{width:300px;height:300px;transform:rotate(180deg);}
+
+        .ani{animation-name:practice;animation-duration:4s;animation-iteration-count:infinite;}
+        @keyframes practice{0%{background-color:red;}25%{background-color: orange;}50%{background-color: yellow;}75%{background-color: green;}100%{background-color:blue;}}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">CSS Transitions</h1>
+        <p>
+            CSS transitions allows you to change property values smoothly, over a given duration. <br />
+            <span class="trans">CSS</span>
+            <span class="dtrans">CSS</span>
+            <span class="ctrans">CSS</span>
+            <span class="ani">Animation</span>
+        </p>
+    </div>
+</body>
+</html>

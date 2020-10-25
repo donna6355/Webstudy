@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>810-입력양식폼 기본 코드</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="wrap">
+        <h1>입력양식폼</h1>
+
+        <form action="./800-login_ok.html">
+            <fieldset>
+                <legend>로그인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="secure_num">개인사번</label> 
+                        <input type="text" id="secure_num">
+                    </li>
+                    <li>
+                        <label for="pwd">패스워드</label>
+                        <input type="password" id="pwd">
+                    </li>
+                    <li>
+                        <!-- 공버튼 : 이 버튼을 눌렀을 때 어떤 일이 일어날 것인가는 자바스크립트 코드를 직접 코딩해서 내가 정하겠다 -->
+                        <input type="button" value="공버튼">
+                        
+                        <!-- 예전방식 전송버튼 -->
+                        <input type="submit" value="로그인(전송)">
+                        <!-- 새로운 트렌드 -->
+                        <button type="submit">로그인(전송)</button>
+                        <button type="reset">재입력(리셋)</button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

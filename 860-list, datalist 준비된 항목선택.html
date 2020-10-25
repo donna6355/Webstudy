@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>860-list, datalist 준비된 항목선택</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1>미리 만들어 놓은 항목 노출</h1>
+        <form action="./800-login_ok.html">
+        <fieldset>
+            <legend>과목 선택</legend>
+            <label for="subject">학습과목 :</label>
+            <input type="text" id="subject" name="subject" list="subject_list">
+            <!-- input상자의 속성인 list 값과 아래 datalist의 id 값을 매칭한다. -->
+            <datalist id="subject_list">
+                <option value="html5">웹표준</option>
+                <option value="javascript">자바스크립트</option>
+                <option value="design">디자인</option>
+            </datalist>
+        </fieldset>
+        <p>
+            <button type="submit">전송</button>
+            <button type="reset">재입력</button>
+        </p>
+        </form>
+    </div>
+</body>
+</html>

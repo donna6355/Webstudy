@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url(./reset.css);
+#wrap { width: 1200px; margin: 0 auto; }
+#wrap * { font-family: roboto; }
+#wrap header { position: relative; width: 1200px; height: 90px; margin: 0 auto; background-color: #2ecc71; }
+#wrap header > h1 { width: 200px; }
+#wrap header > h1 > a { display: flex; justify-content: center; align-items: center; width: 180px; height: 180px; color: #fff; font-weight: 600; background-color: #2ecc71; }
+#wrap header > .gnb { position: absolute; left: 200px; top: 36px; }
+#wrap header > .gnb > li { float: left; }
+#wrap header > .gnb > li > a { display: block; padding: 0 12px; color: #fff; font-size: 18px; }
+#wrap header > .nav { position: absolute; right: 24px; bottom: 16px; }
+#wrap header > .nav > li { float: left; margin-left: 16px; }
+#wrap header > .nav > li:nth-child(1) > a { background-image: url(../images/info_icon_01.png); }
+#wrap header > .nav > li:nth-child(2) > a { width: 15px; background-image: url(../images/info_icon_02.png); }
+#wrap header > .nav > li:nth-child(3) > a { background-image: url(../images/info_icon_03.png); }
+#wrap header > .nav > li:nth-child(4) > a { background-image: url(../images/info_icon_04.png); }
+#wrap header > .nav > li > a { display: block; width: 20px; height: 20px; text-indent: -9999px; background-repeat: no-repeat; }
+#wrap header > .hidden { display: none; }
+#wrap header > .hidden > a { display: block; width: 30px; height: 30px; text-indent: -9999px; background-image: url(../images/menu_toggle_btn.png); }
+#wrap section { display: flex; flex-flow: row wrap; }
+#wrap section > .left { width: 600px; height: 500px; background-image: url(../images/slider_01.jpg); background-repeat: no-repeat; background-size: 1.2; background-position: center center; }
+#wrap section > .mid { width: 300px; height: 500px; background-color: #cf2424; }
+#wrap section > .mid > .frame { overflow: hidden; width: 200px; height: 50%; margin: 0 50px; }
+#wrap section > .mid > .frame > img { display: block; width: 100%; margin: 50px 0 20px; }
+#wrap section > .mid > .frame > h3 { color: #fff; font-size: 16px; text-align: center; }
+#wrap section > .right { width: 300px; height: 500px; background-color: #1795d8; }
+#wrap section > .right > h2 { margin: 64px 0 20px; color: #fff; font-size: 24px; text-align: center; }
+#wrap section > .right > .search { margin-left: 100px; }
+#wrap section > .right > .search > li { margin: 8px; list-style-type: decimal; color: #fff; font-size: 16px; }
+#wrap section > .right > .search > li > a { color: #fff; font-weight: 700; font-size: 16px; }
+#wrap section > .latest, #wrap section > .popular { width: 350px; height: 250px; background-color: #ffa500; }
+#wrap section > .latest > h3, #wrap section > .popular > h3 { margin: 32px; color: #fff; font-size: 16px; text-align: center; }
+#wrap section > .latest > ol, #wrap section > .popular > ol { width: 250px; margin: 32px 0 0 50px; }
+#wrap section > .latest > ol > li, #wrap section > .popular > ol > li { margin: 8px 0; list-style-type: circle; color: #fff; }
+#wrap section > .latest > ol > li > a, #wrap section > .popular > ol > li > a { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #fff; font-size: 15px; }
+#wrap section > .popular { background-color: #714185; }
+#wrap section > .logo { width: 300px; }
+#wrap section > .logo > .top { height: 125px; background-color: #af3434; background-image: url(../images/w3c_logo.png); background-size: 94px 45px; background-repeat: no-repeat; background-position: center center; }
+#wrap section > .logo > .bottom { height: 125px; background-color: #744040; background-image: url(../images/html_logo.png), url(../images/css_logo.png), url(../images/js_logo.png); background-size: 43px 60px; background-repeat: no-repeat; background-position: 80px center, 130px center, 180px center; }
+#wrap section > .sns { width: 200px; height: 250px; background-color: #feffc2; background-image: url(../images/social_icon_01.png), url(../images/social_icon_02.png), url(../images/social_icon_03.png); background-repeat: no-repeat; background-position: center 35px, center 100px, center 165px; }
+#wrap > footer { height: 100px; background-color: #333; }
+#wrap > footer > address { color: #fff; font-weight: 600; font-size: 16px; line-height: 100px; text-align: center; }
+#wrap .clear { *zoom: 1; }
+#wrap .clear:after { display: block; clear: both; content: ""; }
+
+/* 가로폭이 992 이하로 미디어쿼리 설정 */
+@media screen and (max-width: 992px) { #wrap { overflow: hidden; width: 100%; margin: 0 auto; }
+  #wrap > header { width: 100%; height: 140px; }
+  #wrap > header > h1 { position: absolute; top: 50px; width: 150px; }
+  #wrap > header > h1 > a { width: 150px; height: 150px; font-size: 16px; }
+  #wrap > header > .gnb { display: none; }
+  #wrap > header > .nav { overflow: hidden; width: 100%; height: 50px; left: 10%; top: 16px; }
+  #wrap > header > .nav > li { width: 25%; margin-left: 0; }
+  #wrap > header > .hidden { display: initial; position: absolute; right: 8px; top: 80px; }
+  #wrap > section > .left { width: 60%; height: 350px; order: 10; }
+  #wrap > section > .right { width: 40%; height: 350px; order: 20; }
+  #wrap > section > .right > h2 { margin-top: 30px; }
+  #wrap > section > .right > .search { display: flex; flex-flow: row wrap; justify-content: space-around; margin: 0; }
+  #wrap > section > .right > .search > li { width: 40%; margin: 4px 0; list-style: none; }
+  #wrap > section > .right > .search > li > a { display: block; padding: 8px; text-align: center; border: 1px solid #fff; box-sizing: border-box; border-radius: 8px; }
+  #wrap > section > .latest { width: 40%; order: 30; }
+  #wrap > section > .popular { width: 40%; order: 40; }
+  #wrap > section > .sns { width: 20%; order: 50; }
+  #wrap > section > .mid { display: flex; flex-flow: row nowrap; justify-content: space-evenly; width: 70%; height: 250px; order: 60; }
+  #wrap > section > .mid > .frame { height: 250px; margin: 0; }
+  #wrap > section > .logo { width: 30%; height: 250px; order: 70; }
+  #wrap > section > .logo > .bottom { background-position: 32% center, 52% center, 72% center; } }
+/* 가로폭이 768 이하로 미디어쿼리 설정 */
+@media screen and (max-width: 768px) { #wrap > header { height: 170px; }
+  #wrap > header > h1 { width: 100%; height: 120px; }
+  #wrap > header > h1 > a { width: 100%; height: 120px; font-size: 32px; }
+  #wrap > section > .left { width: 100%; }
+  #wrap > section > .right { width: 100%; height: 400px; }
+  #wrap > section > .right > .search > li > a { padding: 12px 0; }
+  #wrap > section > .latest, #wrap > section > .popular { width: 100%; }
+  #wrap > section > .latest > ol, #wrap > section > .popular > ol { width: 60%; margin: 32px 20% 0; }
+  #wrap > section > .mid { flex-flow: column nowrap; align-items: center; order: 45; width: 100%; height: 1000px; }
+  #wrap > section > .mid > .frame { width: 70%; height: 45%; }
+  #wrap > section > .logo { width: 100%; }
+  #wrap > section > .sns { order: 80; width: 100%; height: 100px; background-position: 20% center, 50% center, 80% center; } }
+
+/*# sourceMappingURL=style.css.map */

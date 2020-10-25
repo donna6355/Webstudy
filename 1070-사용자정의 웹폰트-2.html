@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1070-사용자정의 웹폰트-2</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'fbdungm';
+            src: url('./fonts/fbdungm.eot');
+            src: url('./fonts/fbdungm.TTF') format('truetype');
+            src: url('./fonts/fbdungm.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'youth';
+            src: url('./fonts/Youth.eot'), url('./fonts/Youth.ttf') format('trutype'), url('./fonts/Youth.woff') format('woff');
+        }
+
+        .fbdungm>li {
+            font-family: 'fbdungm';
+        }
+
+        .youth>li {
+            font-family: 'youth';
+        }
+
+        hr {
+            display: block;
+            margin: 30px 0;
+        }
+
+        #wrap {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            line-height: 100px;
+            text-align: center;
+        }
+
+        section>h2 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        section>ol {
+            width: 600px;
+            height: 50px;
+            margin: 0 auto;
+            *zoom: 1;
+        }
+
+        section>ol:after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+
+        section>ol>li {
+            float: left;
+            width: 150px;
+            height: 50px;
+            font-size: 25px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>웹폰트를 직접 만들어 적용</h1>
+        <section>
+            <h2>fbdungm 웹폰트 적용</h2>
+            <ol class="fbdungm">
+                <li>어바웃미</li>
+                <li>디자인</li>
+                <li>스킬</li>
+                <li>포트폴리오</li>
+            </ol>
+        </section>
+
+        <hr />
+
+        <section>
+            <h2>youth 웹폰트 적용후</h2>
+            <ol class="youth">
+                <li>어바웃미</li>
+                <li>디자인</li>
+                <li>스킬</li>
+                <li>포트폴리오</li>
+            </ol>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 66px;
+	background-color: #ff0;
+	border-bottom: 3px solid gray;
+}
+
+// .bx-wrapper
+//     > .bx-viewport > 우리가만든 .mySlider
+//     > .bx-controls
+//        > .bx-controls-direction(이전다음)
+//        > .bx-controls-auto(자동재생,멈춤)
+//        > .bx-pager (인디케이터-페이지네이션)
+section {
+	margin-top: 69px; /*헤더 포지션 오버랩을 피하려고*/
+	> .bx-wrapper {
+		position: relative;
+		.myslider {
+			height: 440px;
+			> li {
+				width: 100%;
+				height: 440px;
+				background-position: center top;
+				background-repeat: no-repeat;
+				&.slide-1 {
+					background-image: url(../images/line_mainbanr_pc_001.png);
+				}
+				&.slide-2 {
+					background-image: url(../images/line_mainbanr_pc_002.png);
+				}
+				&.slide-3 {
+					background-image: url(../images/line_mainbanr_pc_003.png);
+				}
+				&.slide-4 {
+					background-image: url(../images/line_mainbanr_pc_004.png);
+				}
+			} //end of li
+		} //end of .myslider
+		.bx-controls-direction > a {
+			//이전,다음 버튼
+			display: block;
+			position: absolute;
+			z-index: 1000;
+			top: 50%;
+			width: 30px;
+			height: 58px;
+			margin-top: -29px;
+			text-indent: -9999px;
+			background-image: url(../images/line_mainbanr_btn_arr.png);
+			background-repeat: no-repeat;
+			&.bx-prev {
+				left: 5px;
+				background-position: -5px -141px;
+				&:hover {
+					background-position: -5px -209px;
+				}
+			}
+			&.bx-next {
+				right: 5px;
+				background-position: -5px -5px;
+				&:hover {
+					background-position: -5px -73px;
+				}
+			}
+		} //end of .bx-controls-direction>a
+		.bx-pager {
+			//인디케이터-페이지네이션
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			position: absolute;
+			z-index: 1000;
+			left: 50%;
+			bottom: 17px;
+			width: 112px;
+			margin-left: -56px;
+			> .bx-pager-item {
+				width: 13px;
+				margin-left: -56px;
+				> a {
+					display: block;
+					height: 13px;
+					text-indent: -9999px;
+					background-color: #ddd;
+					border-radius: 50%;
+					box-sizing: border-box;
+					&:hover,
+					&.active {
+						background-color: #fff;
+					}
+				} //end of a
+			} //end of .bx-pager-item
+		} //end of .bx-pager
+		.bx-controls-auto {
+			.bx-start {
+				display: block;
+				position: absolute;
+				z-index: 1000;
+				left: calc(50% + 80px);
+				bottom: 18px;
+				width: 10px;
+				height: 11px;
+				text-indent: -9999px;
+				background-image: url(./../images/controls.png);
+				background-position: -86px -11px;
+				background-repeat: no-repeat;
+				&:hover,
+				&.active {
+					background-position: -86px 0;
+				}
+			} //end of .bx-start
+			.bx-stop {
+				display: block;
+				position: absolute;
+				z-index: 1000;
+				left: calc(50% + 100px);
+				bottom: 18px;
+				width: 9px;
+				height: 11px;
+				text-indent: -9999px;
+				background-image: url(./../images/controls.png);
+				background-position: -86px -44px;
+				background-repeat: no-repeat;
+				&:hover,
+				&.active {
+					background-position: -86px -33px;
+				}
+			} //end of .bx-stop
+		} //end of .bx-controls-auto
+	} //end of .bx-wrapper
+} //end of section
+
+footer > address {
+	height: 40px;
+	color: #fff;
+	font-weight: 800;
+	line-height: 40px;
+	text-align: center;
+	background-color: #333;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>370-CSS 
+        특정도값</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <style>
+        h1{color:red;font-size:50px;}
+        /* 특정도값 1점 */
+        h1{color:blue;}
+        /*특정도값이 같을 경우 나중 값 적용*/
+        
+        #logo{color:green;}
+        /* 특정도값 100점 */
+        
+        .uiux{color:black;}
+        /* 특정도값 10점 */
+
+        ul>li:nth-of-type(4){font-weight:800;}
+        /* 태그 + 태그 + 가상선택자 특정도값 12점 */
+
+        h1#logo.uiux+ul>li.vscode+li{font-weight:400 !important;}
+        /* 1 아이디 2 클래스 4태그 총 124점 */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 id="logo" class="uiux">CSS 구체성단위</h1>
+        <ul>
+            <li>태그는 1점</li>
+            <li>클래스와 가상선택자는 10점</li>
+            <li class="vscode">아이디는 100점</li>
+            <li style="font-weight:800;">인라인방식은 1000점</li>
+            <li>! important - 이렇게 하면 최우선</li>
+        </ul>
+    </div>
+</body>
+</html>

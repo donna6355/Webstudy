@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+.clearfix{*zoom:1;}
+.clearfix:after{
+    display:block;
+    clear:both;
+    content:'';
+}
+
+body{
+    background-color:#394753;
+}
+
+#wrap{
+    width:700px;
+    margin:0 auto;
+    background-color:#fff;
+    /* border:1px solid #000; */
+}
+
+
+/* 헤더영역 */
+header{
+    height:126px;
+}
+
+header>.logo{
+    height:35px;   
+    padding:33px 0 0 20px; 
+    line-height:35px;
+    /* outline:1px solid red; */
+}
+
+header>.logo>a{color: #222;}
+header>.logo>a:hover{text-decoration:none;}
+
+header>nav{
+    margin-top:30px;
+    background-color:#394753;
+    /* *zoom:1; */
+}
+
+
+header>nav>.gnb{
+    float:right;
+}
+
+header>nav>.gnb>li{
+    float:left;
+    border:1px solid #000;
+    border-right-width:0;
+}
+
+header>nav>.gnb>li:last-child{
+    border-right-width:1px;
+}
+
+header>nav>.gnb>li.on{}
+
+header>nav>.gnb>li>a{
+    display:block;
+    height:26px;
+    padding:0 15px;
+    color:#fff;
+    font-weight:800;
+    line-height:26px;
+    
+}
+
+header>nav>.gnb>li.on>a,
+header>nav>.gnb>li:hover>a{
+    color: #222;
+    text-decoration:none;
+    background-color:#fff;
+}
+
+
+/* Visual 영역 - IR 처리 */
+.visual{
+    background-image:url(./../images/header.jpg);
+    background-size:cover;
+}
+
+.visual>a{
+    display:block;
+    height:250px;
+    text-indent:-9999px;
+    /* background-color:yellow; */
+}
+
+
+/* 본문영역 */
+.cont{padding:15px 17px;}
+.cont>h2{display:none;}
+
+.cont>article{
+    float:left;
+    width:210px;
+    height:250px;
+    margin-right:15px;
+    border:1px solid #555;
+}
+
+.cont>article:last-child{margin-right:0;}
+
+.cont>article>h3{
+    margin:5px 5px 2px;
+    font-size:12px;
+}
+
+.cont>article>p{
+    padding:5px;
+    line-height:1.4;
+}
+
+.cont>article .frame{
+    display:block;
+    overflow:hidden;
+    float:right;
+    width:75px;
+    height:75px;
+    margin:-33px -10px 1px 2px;
+    background-color:#fff;
+    border:1px solid #bbb
+}
+
+.cont>article .frame>img{
+    width:100%;
+    height:100%;
+}
+
+.cont>article>dl{
+    margin:30px 0 0 10px;
+}
+
+.cont>article>dl>dt{margin-top:10px;}
+
+
+
+footer>address{
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    text-align:center;
+    background-color:#394753;
+}

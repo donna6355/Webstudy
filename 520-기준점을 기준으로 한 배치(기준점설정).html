@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>520-기준점을 기준으로 한 배치(기준점설정)</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* 기준점 설정 가능 direct ancestor > absolute,relative,fixed declare*/
+        .standard{position:absolute;position:relative;/*position:fixed;*/left:0;top:0;width:400px;height:400px;margin:100px 0 0 100px;background-color:yellow;}
+        .abs{display:block;position:absolute;left:100px;top:100px;width:100px;height:100px;color:white;font-size:12px;background-color:red;}
+
+        /* "내 안에서 자손요소가 position:absolute할 경우 나를 기준으로 위치지정한다"는 의미로 보통 사용 */
+        p.parent{position:relative;width:500px;height:500px;margin-top:600px;background-color:green;}
+        strong.child{display:block;position:absolute;left:0;top:0;width:150px;height:80px;background-color:yellow;}
+    </style>
+</head>
+<body>
+    <h1 class="standard"><span class="abs">positioning box</span></h1>
+    <p class="parent">
+        <strong class="child">experiment</strong>
+    </p>
+</body>
+</html>

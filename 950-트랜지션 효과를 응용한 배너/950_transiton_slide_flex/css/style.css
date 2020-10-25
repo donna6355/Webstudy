@@ -1,0 +1,20 @@
+h1 {
+  line-height: 100px;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  width: 980px;
+  margin: 0 auto;
+}
+ul > li {
+  width: 140px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+ul > li:hover {
+  width: 680px;
+}
+
+/*# sourceMappingURL=style.css.map */

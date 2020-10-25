@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>421-유형별 레이아웃 설계-구성로직</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{width:440px;margin:50px auto;*zoom:1;}
+        #wrap:after{display:block;clear:both;content:"";}
+        .left,.middle,.right{float:left;}
+        .left,.middle{margin-right:20px;}
+        
+        .left{width:100px;}
+        .left>.yellow{height:120px;}
+        .left>.red{height:90px;margin:20px 0;}
+        .left>.green{height:150px;}
+
+        .middle{width:200px;}
+        .middle>.purple{height:280px;margin-bottom:20px;}
+        .middle>.red{height:100px;}
+
+        .right{width:100px;}
+        .right>.gray{height:80px;}
+        .right>.green{height:160px;margin:20px 0;}
+        .right>.yellow{height:120px;}
+
+        .yellow{background-color:#DABA57;}
+        .red{background-color:#cc7e7a;}
+        .green{background-color:#aec344;}
+        .purple{background-color:#b298d7;}
+        .gray{background-color:#b9b0b1;}
+
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="left">
+            <div class="yellow"></div>
+            <div class="red"></div>
+            <div class="green"></div>
+        </header>
+        <section class="middle">
+            <div class="purple"></div>
+            <div class="red"></div>
+        </section>
+        <footer class="right">
+            <div class="gray"></div>
+            <div class="green"></div>
+            <div class="yellow"></dib>
+        </footer>
+    </div>
+</body>
+</html>

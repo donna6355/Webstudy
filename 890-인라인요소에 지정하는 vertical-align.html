@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>인라인요소에 지정하는 vertical-align</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico">
+    <style>
+        *{margin:0;padding:0;}
+   
+   .top{
+      border:1px solid blue;
+      vertical-align: top;
+   }
+   
+   .middle{
+      border:1px solid green;
+      vertical-align:middle;
+   }
+   
+   .bottom{
+      border:1px solid red;
+      vertical-align:bottom; /*default*/
+   }
+    </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1>인라인 요소에 지정하는 : vertical-align</h1>
+      <div class="box">
+         <h2>vertical-align 속성은 <span>"~~을 기준으로..."</span></h2>
+       
+         <p>
+            <img class="top" src="images/1.gif" alt="#" />
+            vertical-align:top 정렬
+         </p>
+       
+         <p>
+            <img class="middle" src="images/2.gif" alt="#" />
+            vertical-align:middle 정렬
+         </p>
+       
+         <p>
+            <img class="bottom" src="images/3.gif" alt="#" />
+            vertical-align:bottom 정렬
+         </p>
+      </div>
+   </div>
+</body>
+</html>

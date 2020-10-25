@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{width:500px;margin:0 auto;}
+        .cover{font-weight: 900;font-size: 30px;color:#777;}
+        .tooltip{visibility:hidden;position:absolute;z-index:1;width:150px;height:50px;color:#fff;line-height:50px;text-align:center;background-color:#444;}
+        .cover:hover>.tooltip{visibility:visible;top:0;left:0;}
+    </style>
+</head>
+<div id="wrap">
+    <h1 class="text-center">CSS Tooltip</h1>
+    <p>A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element:</p>
+    <p class="cover">Top<span class="tooltip">Top</span></p>
+    <p class="cover">Bottom<span class="tooltip">Bottom</span></p>
+    <p class="cover">Right<span class="tooltip">Right</span></p>
+</div>
+<body>
+</body>
+</html>

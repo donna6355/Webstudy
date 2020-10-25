@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>300-앵커-페이지를 이동하는 하이퍼링크</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <style>
+        *{margin:0;padding:0;}
+        #wrap>h1{height:100px; line-height:100px; text-align:center;}
+        a{display:block;overflow:hidden;width:300px;height:50px;margin:0 auto 50px;line-height:50px;text-decoration:none;text-align:center;border:1px solid black;}
+        a:hover{background-color:yellow;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>&lt;a&gt; - 페이지를 이동하는 하이퍼링크</h1>
+        <p>
+            <a href="http://www.naver.com">네이버(외부사이트) 이동</a>
+            <a href="280-한국의 라면.html">내부페이지 이동</a>
+            <a href="http://www.daum.net" target="_blank">다음(새창에서 열기)</a>
+            <a href="220-액자안에 이미지 넣기.html" title="어린왕자 페이지로 이동">
+                <img src="./images/prince.png" alt="어린왕자"></a>
+            <!-- 링크에 대한 정보를 알려주는 툴팁을 삽입(시멘틱웹) -->
+            <a href="./경로/파일명.확장자">첨부파일 내려받기</a>
+            <a href="mailto:abc@naver.com">메일 발송</a>
+            <a href="https://youtu.be/pRelu6Ww2ZA">유튜브영상</a>
+            <a href="http://maps.google.com/maps?q=gangnam&z=16">구글맵</a>
+            <a href="tel:01012341234">전화하기(모바일 전용)</a>
+            <a href="sms:01012341234">문자발송(모바일 전용)</a>
+        </p>
+    </div>
+</body>
+</html>

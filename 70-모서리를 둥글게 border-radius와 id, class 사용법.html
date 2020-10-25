@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>70-모서리를 둥글게 border-radius와 id, class 사용법</title>
+<link rel="shortcut icon" href="images/my favicon.ico" type="image/x-icon">
+<style>
+    div#wrap{font-size:15px; text-align:center; border:1px solid black;}
+    /* id명이 wrap인 div 선택자 */
+    div#wrap>h1{width:400px; height:200px; line-height:180px; border:10px solid blue; border-radius:20px 30px 40px 50px;}
+    /* id명이 wrap인 div의 직계자식 h1 */
+    
+    /* #wrap == *#wrap *는 생략 가능 id가 wrap인 요소*/
+        #wrap>p{width:300px; height:150px; border:5px solid pink; border-radius:75px; box-sizing:border-box;}
+    
+    .ball{color:green;}
+    /* class명이 ball인 모든 요소 */
+    p.ball{width:250px; height:250px; background-color:yellow; border-radius:125px;}
+
+</style>
+</head>
+
+<!-- #wrap 또는 .container라는 최상위 박스가 소스코드에 항상 존재하는 이유
+다른 웹사이트의 작성코드를 보면 wrap, wrapper, container 등의 id/class를 쓰는 div태그로 모든 태그들을 감싸고 있는 소스를 자주 볼 수 있다. 
+왜 이렇게 작업하는걸까요?
+
+wrap 또는 wrapper라는 역할을 하는 요소로 박스 전체를 감싸면 웹문서 내용 전체의 크기나 배경색 등을 한꺼번에 조절할 수 있을 뿐 아니라 브라우저 화면 크기에 상관없이 문서내용을 중앙에 배치할 수 있다.
+
+또한 반응형웹에서는 자식 박스들이 가변크기로 설정되었을 때 무제한으로 늘어나는 것을 방지할 수 있으며 자식 박스들을 가변크기로 만들때 기준으로 삼아 사용할 수도 있다.-->
+
+<body>
+    <div id="wrap">
+    <h1 class="ball">UX Design</h1>
+    <p>UX 디자인은 기획에 가깝다.</p>
+    <hr />
+    <div>
+        <p class="ball">사용자 분석</p>
+        <p class="ball">Insight(창의적 해석)</p>
+        <p class="ball">정보를 계층화하는 IA설계</p>
+        <p class="ball">사용자 시나리오</p>
+        <p class="ball">WireFrame 제작</p>
+    </div>
+</div>
+</body>
+</html>

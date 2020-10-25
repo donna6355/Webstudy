@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>235-이미지에 CSS 효과적용</title>
+    <link rel="shortcut icon" href="images/my favicon.ico" type="image/x-icon">
+    <style>
+        *{margin:0;padding:0;}
+        #wrap{width:1000px; height:420px; margin: 0 auto; border:1px solid red;}
+        h1{height:100px; line-height:100px; text-align:center;}
+        .smallest{display:inline-block;overflow:hidden;width:50px; height:75px; margin:0 30px 0 0;border:5px solid black;}
+        .smallest>img{width:100%;}
+        .small{display:inline-block;overflow:hidden;width:80px; height:120px; margin:0 30px 0 0;border:5px dotted red;}  
+        .small>img{width:100%;}    
+        .middle{display:inline-block;overflow:hidden;width:100px; height:150px; margin:0 30px 0 0;border: 5px dashed blue;}      
+        .middle>img{width:100%;}
+        .large{display:inline-block;overflow:hidden;width:150px; height:225px; margin:0 30px 0 0;border: 5px double green;}      
+        .large>img{width:100%;}
+        .largest{display:inline-block;overflow:hidden;width:200px; height:300px; margin:0 30px 0 0;border: 5px solid transparent;}      
+        .largest>img{width:100%;}
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>국립중앙박물관 전시일정</h1>
+        <p class="smallest">
+            <img src="./images/1.gif" alt="1번 전시" />
+        </p>
+        <p class="small">
+            <img src="./images/2.gif" alt="2번 전시">
+        </p>
+        <p class="middle">
+            <img src="./images/3.gif" alt="3번 전시">
+        </p>
+        <p class="large">
+            <img src="./images/4.jpg" alt="4번 전시">
+        </p>
+        <p class="largest">
+            <img src="./images/5.jpg" alt="5번 전시">
+        </p>
+    </div>
+</body>
+</html>

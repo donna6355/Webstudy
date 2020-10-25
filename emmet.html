@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Zen Coding(emmet)</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <style>
+        div{
+            display: block; /*d:b*/
+            display: inline; /*d:i*/
+            display: inline-block; /*d:ib*/
+            display: none; /*d:n*/
+
+            overflow: hidden; /*ov:h*/
+
+            float: left; /*fl:l*/
+            float: right; /*fl:r*/
+            float: none; /*fl:n*/
+            position: absolute; /*pos:a*/
+            position: relative; /*pos:r*/
+            position: fixed; /*pos:f*/
+
+            left; /*l*/ right; /*r*/ top; /*t*/ bottom; /*b*/
+            z-index: ; /*z*/ 
+            width: ; /*w*/ height: ; /*h*/
+            margin: ; /*m*/ margin-bottom: ; /*mb*/
+            padding: ; /*p*/
+            
+            color: #000; /*C*/
+            font-style: italic; /*fs*/ font-style: normal; /*fs:n*/
+            font-weight: 800; /*fw:800*/
+            font-size: 15px; /*fz*/
+            line-height: ; /*lh*/
+            font-family: serif; /*ff*/
+            text-indent: ; /*ti*/
+            word-spacing: ; /*wos*/
+            text-align: center; /*tac*/
+            background-color: #fff; /*bgc*/ 
+        }
+    </style>
+</head>
+<body>
+    <p class="name-1"></p>
+    <p class="name-2"></p>
+    <p class="name-3"></p>
+    <!-- p.name-$*3 -->
+
+    <li class="class_01"><span></span></li>
+    <li class="class_02"><span></span></li>
+    <li class="class_03"><span></span></li>
+    <li class="class_04"><span></span></li>
+    <li class="class_05"><span></span></li>
+    <li class="class_06"><span></span></li>
+    <li class="class_07"><span></span></li>
+    <!-- li.class_0$*7>span -->
+
+    <nav>
+        <ul>
+            <li class="first"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="last"></li>
+        </ul>
+    </nav>
+    <!-- nav>ul>li.first+li*4+li.last -->
+
+    <header>
+        <nav></nav>
+    </header>
+    <section>
+        <div class="left"></div>
+        <div class="content"></div>
+    </section>
+    <footer></footer>
+    <!-- (header>nav)+(section>div.left+div.content)+footer -->
+    
+    <div id="page">
+        <span class="logo"></span>
+        <ul id="nav">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    <!-- #page>span.logo+ul#nav>(li>a)*5 -->
+</body>
+</html>

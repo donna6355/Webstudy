@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>230-이미지밑에 약간 뜨는 현상</title>
+    <link rel="shortcut icon" href="images/my favicon.ico" type="image/x-icon">
+    <style>
+        h1{height:100px;line-height:100px;text-align:center;}
+        .frame{border:1px solid red;}
+        .frame>img{display: block;}
+        /* .frame>img{vertical-align:top;} 위의 방법을 추천*/
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>이미지 이상현상</h1>
+        <p class="frame">
+            <img src="./images/2.gif" alt="#">
+        </p>
+    </div>
+</body>
+</html>

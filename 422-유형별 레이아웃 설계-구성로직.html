@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>422-유형별 레이아웃 설계 - 구성 로직</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{width:640px;margin:30px auto;}
+        .up{*zoom:1;}
+        .up:after{display:block;clear:both;content:"";}
+        .up>.left,.up>.middle,.up>.right{float:left;width:200px;}
+        .middle{margin:0 20px;}
+
+        .up>.left>.red{height:150px;margin-bottom:20px;}
+        .up>.left>.blue{height:150px;}
+
+        .up>.middle>.red{height:320px;}
+        .up>.middle>.red:first-child{margin-bottom:20px;}
+
+        .up>.right>.blue{height:150px;}
+        .up>.right>.blue:first-child{margin-bottom:20px;}
+
+        .down{*zoom:1;}
+        .down:after{display:block;clear:both;content:"";}
+        .down>.wide{float:left; width:420px;margin-right:20px;}
+        .down>.right{float:left; width:200px;}
+
+        .down>.wide>.red{height:260px;}
+
+        .down>.right>.blue:first-child{height:180px;}
+        .down>.right>.blue:last-child{height:60px;margin-top:20px;}
+
+        .red{background-color:#e73c42;}
+        .blue{background-color:#4f92bd;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="up">
+            <header class="left">
+                <div class="red"></div>
+                <div class="blue"></div>
+            </header>
+
+            <section class="middle">
+                <div class="red"></div>
+            </section>
+            
+            <aside class="right">
+                <div class="blue"></div>
+                <div class="blue"></div>
+            </aside>
+        </div>
+        <div class="down">
+            <section class="wide">
+                <div class="red"></div>
+            </section>
+            <aside class="right">
+                <div class="blue"></div>
+                <div class="blue"></div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

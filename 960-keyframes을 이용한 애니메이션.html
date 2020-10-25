@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>keyframes을 이용한 애니메이션</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        @keyframes box {
+            from {
+                left: 0;
+                top: 0;
+                width: 100px;
+                background-color: #f00;
+            }
+
+            to {
+                lefT: 400px;
+                top: 200px;
+                width: 300px;
+                background-color: #0f0;
+                border-radius: 100px;
+            }
+        }
+
+        @keyframes circle {
+            0% {
+                transform: translate(0, 0) scale(1) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(200px, 200px) scale(1.5) rotate(180deg);
+            }
+
+            100% {
+                transform: translate(500px, 500px) scale(2) rotate(360deg);
+            }
+        }
+
+        .box {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            font-weight: 800;
+            text-align: center;
+            line-height: 100px;
+            background-color: #f00;
+            animation-name: box;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+            /* animation: move 5s infinite; */
+        }
+
+        .circle {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            font-weight: 800;
+            text-align: center;
+            line-height: 100px;
+            background-color: #00f;
+            border-radius: 50%;
+            animation: circle 2s ease-in-out alternate infinite;
+        }
+
+        .circle:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1 class="text-center">CSS @keyframes</h1>
+        <section>
+            <p class="box">Box</p>
+            <p class="circle">Circle</p>
+        </section>
+    </div>
+</body>
+
+</html>

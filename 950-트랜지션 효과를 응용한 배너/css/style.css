@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+h1 {
+	line-height: 100px;
+	text-align: center;
+}
+
+ul {
+	display: flex;
+	overflow: hidden;
+	flex-flow: row nowrap;
+	width: 980px;
+	margin: 0 auto;
+}
+ul > li {
+	width: calc(100%/7);
+	transition: all .5s;
+}
+ul > li:hover {
+	width: 100%;
+}
+
+ul > li > a {
+	display: block;
+	width: calc((980px - 678px) /7);
+}
+ul > li:hover > a {
+	width: 678px;
+}

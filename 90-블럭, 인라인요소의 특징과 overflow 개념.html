@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>90-블럭, 인라인요소의 특징과 overflow 개념</title>
+    <link rel="shortcut icon" href="images/my favicon.ico" type="image/x-icon">
+    <style>
+        /* embeded style */
+            h1,span{width:400px; height:400px; background-color:yellow; border:1px solid blue;}
+        /* "," : 그룹선택자 */
+        span+p{width:200px; background-color:red;}
+        p~div{overflow:hidden; width:80px; height:20px; color:blue; background-color:green;}
+        /* height를 정하면 overflow현상이 일어날 수도 있다 */
+        div~span{background-color:orange; border:1px solid red;}
+    </style>
+</head>
+<body>
+    <h1>나는 블럭요소 h1</h1>
+    <span>나는 인라인요소 span</span>
+    <p>나는 블럭요소 p</p>
+    <div>나는 블럭요소 div</div>
+    
+    <span>나는 인라인요소 span-1</span>
+    <span>나는 인라인요소 span-2</span>
+    <span>나는 인라인요소 span-3</span>
+    <span>나는 인라인요소 span-4</span>
+    <span>나는 인라인요소 span-5</span>
+</body>
+</html>

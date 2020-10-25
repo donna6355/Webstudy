@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>880-회원정보 입력폼</title>    
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/881-form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.6.2/basic/ckeditor.js"></script>      
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">회원가입 입력폼</h1>
+
+        <form action="./800-login_ok.html" method="post">
+            <fieldset>
+                <legend>회원가입폼</legend>
+                <div class="smit_form">
+                    <table>
+                        <caption>회원정보</caption>
+                        <colgroup>
+                            <col style="width: 150px;" />
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="username">이름</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="username" name="username" autocomplete="off" autofocus="autofocus" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="userid">아이디</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="userid" name="userid" autocomplete="off" />
+                                    <span class="ment">5~15자 이내의 영문, 숫자만 사용 가능</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="userpwd">비밀번호</label>
+                                </th>
+                                <td>
+                                    <input type="password" id="userpwd" name="userpwd" autocomplete="off" />
+                                    <span class="ment">영문+숫자+특수문자 권장</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    <label for="gender">성별</label>
+                                </th>
+                                <td>
+                                    <input checked type="radio" id="gender" name="gender" value="0" /><span>여자</span>
+                                    <input type="radio" name="gender" value="1" /><span>남자</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    <label for="male">자녀</label>
+                                </th>
+                                <td>
+                                    <input type="checkbox" id="male" name="male" value="male" /> <span>아들</span>
+                                    <input type="checkbox" name="female" value="female" /> <span>딸</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    <label for="userpht">증명사진</label>
+                                </th>
+                                <td>
+                                    <input type="file" id="userpht" name="userpht">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    <label for="useremail">이메일</label>
+                                </th>
+                                <td>
+                                    <select name="useremail" id="useremail">
+                                        <option value="">직접입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="hanmail.com">hanmail.com</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                    </select>
+                                    <input type="text" name="email_id" maxlength="10">
+                                    @
+                                    <input type="text" name="email_domain" maxlength="20">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    <label for="memo">메모</label>
+                                </th>
+                                <td>
+                                    <textarea class="ckeditor" name="memo" id="memo" cols="30" rows="10"></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn_container">
+                    <button type="submit">확인</button>
+                    <button type="button">취소</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

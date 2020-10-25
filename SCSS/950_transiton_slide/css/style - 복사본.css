@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+h1 {
+	line-height: 100px;
+	text-align: center;
+}
+
+ul {
+	// display: flex;
+	// overflow: hidden;
+	// flex-direction: row;
+	// flex-wrap: nowrap;
+
+	width: 980px;
+	margin: 0 auto;
+	*zoom: 1;
+
+	&:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+	&:hover > li {
+		width: 50px;
+	}
+
+	> li {
+		overflow: hidden;
+		float: left;
+		width: 140px;
+		transition: all 0.8s ease-in-out;
+
+		&:hover {
+			width: 680px;
+		}
+
+		> a {
+			display: block;
+			height: 380px;
+
+			> img {
+				display: block;
+				width: 680px;
+				height: 380px;
+			}
+		}
+	}
+}

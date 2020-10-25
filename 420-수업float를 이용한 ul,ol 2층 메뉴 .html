@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>420-float을 이용한 ol, ul 2중 메뉴</title>    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{width:830px;margin:0 auto;}
+        header>nav>.gnb{*zoom:1;}
+        header>nav>.gnb:after{display:block;clear:both;content:"";}
+
+        header>nav>.gnb>li{float:left;width:200px;margin-right:10px;border:1px solid black;box-sizing:border-box;}
+        header>nav>.gnb>li:last-child{margin-right:0;}
+
+        header>nav>.gnb>li>a{display:block;height:50px;line-height:50px;text-align:center;}
+        header>nav>.gnb>li:hover>a{color:white;font-weight:800;background-color:green;}
+
+        header>nav>.gnb ol{display:none;border-top:1px solid black;box-sizing:border-box;}
+        header>nav>.gnb>li:hover>ol{display:block;}
+        header>nav>.gnb ol>li>a{display:block;height:50px;line-height:50px;text-align:center;}
+        header>nav>.gnb ol>li:hover>a{background-color:yellow;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="text-center">한국전력</h1>
+            <nav>
+                <!-- global navigation bar -->
+                <ul class="gnb">
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ol>
+                            <li><a href="#">한전소개</a></li>
+                            <li><a href="#">사업소개</a></li>
+                            <li><a href="#">채용정보</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">기업센터</a>
+                        <ol>
+                            <li><a href="#">에너지밸리</a></li>
+                            <li><a href="#">중소기업</a></li>
+                            <li><a href="#">동반성장</a></li>
+                            <li><a href="#">아이디어기술</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">홍보센터</a>
+                        <ol>
+                            <li><a href="#">전시/관람</a></li>
+                            <li><a href="#">문화</a></li>
+                            <li><a href="#">스포츠</a></li>
+                            <li><a href="#">공모전</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">지식센터</a>
+                        <ol>
+                            <li><a href="#">전기자료</a></li>
+                            <li><a href="#">전기알림마당</a></li>
+                            <li><a href="#">절전정보광장</a></li>
+                            <li><a href="#">전력용어</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>

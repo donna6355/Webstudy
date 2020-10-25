@@ -1,0 +1,36 @@
+h1 {
+  line-height: 100px;
+  text-align: center;
+}
+
+ul {
+  width: 980px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+ul:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+ul:hover > li {
+  width: 50px;
+}
+ul > li {
+  float: left;
+  width: 140px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+ul > li:hover {
+  width: 680px;
+}
+ul > li > a {
+  display: block;
+}
+ul > li > a > img {
+  display: block;
+  width: 680px;
+}
+
+/*# sourceMappingURL=style.css.map */

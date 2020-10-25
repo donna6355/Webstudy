@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>320-가상선택자의 활용</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <style>
+        *{margin:0;padding:0;}
+        #wrap{width:900px;margin:0 auto;}
+        h1{width:900px;height:100px;line-height:100px;text-align:center;}
+        ul{list-style:none;}
+        ul>li{border-bottom:1px dotted gray;}
+        ul>li:first-child{border-top:1px dotted black;}
+        ul>li>a{display:block;padding:10px 10px;color:black;text-decoration:none;}
+        a:hover{background-color:yellow;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>제목, 설명구조의 listView</h1>
+        <ul>
+            <li><a href="#">
+                <h2>HTML</h2>
+                <p>웹 페이지를 제작하기 위한 뼈대를 구성하는 언어</p>
+            </a></li>
+            <li><a href="#">
+                <h2>CSS</h2>
+                <p>HTML로 구성된 뼈대에 옷을 입히는 언어</p>
+            </a></li>
+            <li><a href="#">
+                <h2>JavaScript</h2>
+                <p>동적인 기능을 추가하여 웹페이지에 생명을 불어 넣는 언어</p>
+            </a></li>
+            <li><a href="#"><dt>CSS</dt><dd>html로 구성된</dd></a></li>
+        </ul>
+    </div>
+</body>
+</html>

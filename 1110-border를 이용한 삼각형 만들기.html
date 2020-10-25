@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .shape1 {
+            display: block;
+            width: 0;
+            height: 0;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red transparent blue transparent;
+        }
+
+        .shape2 {
+            display: block;
+            width: 0;
+            height: 0;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent green transparent transparent;
+        }
+
+        .shape3 {
+            display: block;
+            width: 0;
+            height: 0;
+            border-width: 50px;
+            border-style: solid;
+            border-color: transparent transparent orangered transparent
+        }
+
+        .shape4 {
+            position: relative;
+            display: block;
+            width: 0;
+            height: 0;
+            border-width: 30px;
+            border-style: solid;
+            border-color: transparent transparent transparent yellow
+        }
+    </style>
+    <script src="../javascript/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            setInterval(function () {
+                let pos = parseInt($('.shape4').css('left'));
+                pos += 50;
+                console.log(pos)
+                $('.shape4').css({ left: pos })
+            }, 500)
+        })
+    </script>
+</head>
+
+<body>
+    <div id="warp">
+        <h1 class="text-center">삼각형 만들기 </h1>
+        <span class="shape1"></span>
+        <span class="shape2"></span>
+        <span class="shape3"></span>
+        <span class="shape4"></span>
+    </div>
+</body>
+
+</html>

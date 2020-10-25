@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>텍스트와 배경색 CSS</title>
+		<style>
+			#wrap{
+				width: 500px;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			h1.title {
+                text-indent: -200px;
+                border:1px dotted blue;
+             /* 
+                왼쪽으로 -200px만큼 들여쓰기
+                파랑색 외곽선을 dotted으로 표현
+              */			
+			}
+
+			p.bank {	
+                line-height: 2;		
+             /* 줄간격을 200% 설정 */
+			}
+
+			.voice {
+                font-size:30px;
+				/* 글자크기를 30px으로 */
+			}
+
+			.sad {
+                color:red;
+				/* 글자색을 빨간색으로 */
+			}
+
+			.told {
+                font-weight:800;
+				/* 글자를 굵게 */
+			}
+
+			.for {
+                font-family: '굴림';
+				/* 굴림체로 설정 */
+			}
+
+			.return {
+                text-decoration: underline;
+				/* 밑줄을 넣음 */
+			}
+
+			.last {
+                font-style:italic;
+                font-weight:800;
+				/* 초록색의 굵은 이탤릭체로 설정 */
+			}
+
+			.mind {
+                letter-spacing: 10px;;
+				/* 글자간격을 10픽셀로 */
+			}
+
+			.beside {
+                word-spacing: 30px;
+                background-color:yellow;
+				/* 단어간의 간격을 30픽셀, 
+                노란배경색 적용 */
+			}
+		</style>	
+	</head>
+	<body>
+		<div id="wrap">
+			<h1 class="title"> 가질 수 없는 너 - 뱅크</h1>
+			<p class="bank">
+				술에 취한 니 <span class="voice">목소리</span> 문득 생각났다던 그 말
+				<br />
+				<span class="sad">슬픈 예감</span> 가누면서 네게로 달려갔던 날 그 밤
+				<br />
+				희미한 두 눈으로 날 반기며 <span class="told">넌 말했지</span>
+				<br />
+				헤어진 <span class="for">그를 위해선 남아있는</span> 네 삶도 버릴 수 있다고
+				<br />
+				며칠 사이 야윈 널 달래고 집으로 <span class="return">돌아오면서</span>
+				<br />
+				<span class="last">마지막까지도</span> 하지 못한 말 혼자서 되뇌였었지
+				<br />
+				사랑한다는 <span class="mind">마음으로도</span> 가질 수 없는 사람이 있어
+				<br />
+				나를 봐 <span class="beside">이렇게 곁에 있어도</span> 널 갖지 못하잖아
+				<br />
+			</p>
+		</div>
+	</body>
+</html>

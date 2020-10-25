@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>490-하나의 박스를 absolute 배치</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /*특정 기준점을 기준으로 지정한 값만큼 배치
+        !기준점을 따로 지정하지 않으면 body가 기준
+        !기준점은 직계부모를 포함한 해당박스의 조상에게만 성절 가능*/
+        .box{position:absolute;right:50px;bottom:80px;width:100px; height:100px;border:1px solid blue;box-sizing:border-box;}
+    </style>
+</head>
+<body>
+    <h1 class="box"></h1>
+</body>
+</html>

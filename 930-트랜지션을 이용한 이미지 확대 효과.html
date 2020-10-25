@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .frame{overflow:hidden;position:relative;width:250px;height:250px;margin:0 auto;}
+        .frame>img{display:block;width:100%;transition:all .2s;}
+        .frame:hover>img{transform:scale(1.2);opacity:0.8;}
+        .frame:after{display:block;position:absolute;left:0;top:0;width:250px;height:250px;background-color: rgba(26,30,31,0.85);opacity:0;content:'';transition:all .5s;}
+        .frame:hover:after{display:block;opacity:0.5;}
+
+        .gnb{width:800px;margin:20px auto;}
+        .gnb>ol>li{overflow:hidden;float:left;width:200px;height:100px;margin-right:20px;background-color: pink;transition:all 1s;}
+        .gnb>ol>li:hover{height:400px;}
+        .gnb>ol>li>a{display:block;width:200px;height:100px;font-weight:900;line-height:100px;text-align:center;}
+
+        .gnb>ol>li>ol>li{width:200px;}
+        .gnb>ol>li>ol>li>a{display:block;width:200px;height:100px;color:#fff;font-weight:900;background-color:#999;line-height:100px;text-align:center;transition:all 5s;}
+        .gnb>ol>li>ol>li>a:hover{color:#ddd;background-color:#111;text-shadow:1px 1px 5px #fff;}
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">트랜지션을 이용한 이미지 확대 효과</h1>
+        <p class="frame">
+            <img src="./images/home.jpg" alt="#">
+        </p>
+
+        <nav class="gnb">
+            <ol class="clear">
+                <li>
+                    <a href="#">Menu</a>
+                    <ol>
+                        <li><a href="#">Submenu1</a></li>
+                        <li><a href="#">Submenu1</a></li>
+                        <li><a href="#">Submenu1</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                    <ol>
+                        <li><a href="#">Submenu1</a></li>
+                        <li><a href="#">Submenu1</a></li>
+                        <li><a href="#">Submenu1</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                    <ol>
+                        <li><a href="#">Submenu1</a></li>
+                        <li><a href="#">Submenu1</a></li>
+                        <li><a href="#">Submenu1</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </nav>
+    </div>
+</body>
+</html>

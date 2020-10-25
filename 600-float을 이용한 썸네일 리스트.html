@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>600-float을 이용한 썸네일 리스트</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{margin-top:30px;font-family:nanumgothic;}
+        header{margin:30px;}
+        header>h1{font-size:30px;}
+        header>P{font-size:15px;margin-top:5px;}
+
+        section{margin:0 10px}
+        section>div{width:25%;float:left;margin:30px 0;}
+        section>div>.frame{width:100px;height:100px;margin:0 auto;border:5px solid #d0d0d0;box-sizing:border-box;border-radius:30px;}
+        section>div>.frame>img{width:100%;height:100%;}
+        section>div>p{overflow:hidden;margin-top:10px;font-size:15px;text-align:center;white-space:nowrap;text-overflow:ellipsis;}
+
+        .clearfix{*zoom:1;}
+        .clearfix:after{display:block;clear:both;content:"";}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>글라스컵</h1>
+            <p>맛있는 음료를 담을 수 있는 글라스 리스트</p>
+        </header>
+        <section class="clearfix">
+            <div>
+                <p class="frame"><img src="./images/delicious.png" alt="#"></p>
+                <p>디그 아세요? 오렌지 위를 잘 보세요. digg가 있답니다.</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/designfloat.png" alt="#"></p>
+                <p>furl 잔입니다. 목이 길고 배가 적당히 부른게 특징이죠~</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/digg.png" alt="#"></p>
+                <p>오렌지가 돋보이는 레딧잔은 한번 마시면 중독되요</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/furl.png" alt="#"></p>
+                <p>오후엔 와이파이가 되는 위치에서 시원한 맥주한잔 어때요?</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/reddit.png" alt="#"></p>
+                <p>스마일하게 스매싱하고 싶을때 우린 이 잔을 선택합니다.</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/rss.png" alt="#"></p>
+                <p>맛있어 보이나요? 뭐가 있을까요?</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/smashing.png" alt="#"></p>
+                <p>트위터를 즐기는 연인라면 이잔으로 해봐요.</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/stumbleupon.png" alt="#"></p>
+                <p>첨단기술이 녹아 있는 평범해 보아는 잔이죠</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/technorati.png" alt="#"></p>
+                <p>디자인 플롯 잔입니다. 목이 긴게 특징이죠~!</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/twitter.png" alt="#"></p>
+                <p>체리처럼 상큼한 맛을 기대하신다면 과감하게 잔을 드세요</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/yahoo.png" alt="#"></p>
+                <p>아참 스트럼블 잔이 빠졌네요. 메론색의 특별한 잔</p>
+            </div>
+            <div>
+                <p class="frame"><img src="./images/youtube.png" alt="#"></p>
+                <p>오늘 저녁 유튜브로 영화한편 어때요</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

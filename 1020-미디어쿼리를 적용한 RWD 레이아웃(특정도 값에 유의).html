@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1020-미디어쿼리를 적용한 RWD 레이아웃(특정도 값에 유의)</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* PC */
+        #wrap {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        #wrap * {
+            font-size: 24px;
+            font-family: 'roboto';
+            font-weight: 900;
+            text-align: center;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            margin: 30px 0 10px;
+            color: #fff;
+            background-color: #777;
+            line-height: 100px;
+            border-radius: 20px;
+        }
+
+        section {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        section>.left {
+            width: 20%;
+        }
+
+        section>.left>.lnb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            margin: 0 10px 10px 0;
+            color: #fff;
+            background-color: #00f;
+            border-radius: 20px;
+        }
+
+        section>.left>.ad {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            margin: 0 10px 10px 0;
+            background-color: pink;
+            border-radius: 20px;
+        }
+
+        section>.cont {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+            margin-bottom: 10px;
+            background-color: #ff0;
+            border-radius: 20px;
+        }
+
+        footer {
+            height: 100px;
+            line-height: 100px;
+            color: #fff;
+            background-color: brown;
+            border-radius: 20px
+        }
+
+        /* Mobile */
+        @media screen and (max-width:768px) {
+            #wrap {
+                width: 100%;
+            }
+
+            section>.cont,
+            section>.left {
+                width: 100%;
+            }
+
+            section>.left {
+                order: 100;
+            }
+
+            section>.left>.lnb,
+            section>.left>.ad {
+                height: 50px;
+                margin-right: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>헤더</header>
+        <section>
+            <article class="left">
+                <div class="lnb">LNB</div>
+                <div class="ad">AD</div>
+            </article>
+            <article class="cont">컨텐츠</article>
+        </section>
+        <footer>풋터</footer>
+    </div>
+</body>
+
+</html>

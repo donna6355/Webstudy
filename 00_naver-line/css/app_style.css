@@ -1,0 +1,23 @@
+@import url(./reset.css);
+@import url(./header_footer.css);
+#wrap > section { width: 1000px; margin: 63px auto; }
+#wrap > section > .main > li { display: flex; flex-flow: column wrap; align-content: space-between; width: 1000px; height: 300px; border-bottom: 1px solid #ddd; }
+#wrap > section > .main > li > img { display: block; width: 190px; height: 190px; margin: 55px 0; }
+#wrap > section > .main > li > h2 { width: 755px; margin-top: 75px; color: #444; font-weight: 500; font-size: 40px; }
+#wrap > section > .main > li > p { width: 755px; margin-top: 15px; color: #444; line-height: 1.5; font-size: 14px; }
+#wrap > section > .main > li > .cont > a { position: relative; display: inline-block; width: 100px; height: 26px; margin: 16px 8px 0 0; color: #fff; font-size: 13px; line-height: 26px; text-indent: 8px; background-color: #777; }
+#wrap > section > .main > li > .cont > a:after { position: absolute; right: 1px; top: 1px; display: inline-block; width: 25px; height: 24px; background-image: url(../images/line_00_button.png); background-repeat: no-repeat; content: ""; }
+#wrap > section > .main > li > .cont > a:nth-child(3) { width: 150px; }
+#wrap > section > .sub { display: flex; flex-flow: row wrap; justify-content: space-between; }
+#wrap > section > .sub > li { display: flex; flex-flow: column wrap; width: 500px; height: 140px; margin: 16px 0; }
+#wrap > section > .sub > li:before { display: inline-block; width: 96px; height: 96px; margin: 16px 0; background-repeat: no-repeat; content: ""; }
+#wrap > section > .sub > li:nth-child(1):before { background-image: url(../images/line_famapp_sub1.png); }
+#wrap > section > .sub > li:nth-child(2):before { background-image: url(../images/line_famapp_sub2.png); }
+#wrap > section > .sub > li:nth-child(3):before { background-image: url(../images/line_famapp_sub3.jpg); }
+#wrap > section > .sub > li > h3 { width: 360px; margin-top: 16px; color: #444; font-weight: 500; font-size: 13px; }
+#wrap > section > .sub > li > p { width: 360px; margin-top: 8px; color: #444; font-size: 12px; line-height: 1.5; }
+#wrap > section > .sub > li > .cont { width: 360px; }
+#wrap > section > .sub > li > .cont > a { position: relative; display: inline-block; width: 100px; height: 26px; margin: 12px 8px 0 0; color: #fff; font-size: 13px; line-height: 26px; text-indent: 8px; background-color: #777; }
+#wrap > section > .sub > li > .cont > a:after { position: absolute; right: 1px; top: 1px; display: inline-block; width: 25px; height: 24px; background-image: url(../images/line_00_button.png); background-repeat: no-repeat; content: ""; }
+
+/*# sourceMappingURL=app_style.css.map */

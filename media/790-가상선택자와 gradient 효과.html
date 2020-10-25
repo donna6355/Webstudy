@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .frame{
+            overflow: hidden;
+            position: relative;/* 그레디언트의 기준점 */
+            width: 350px;
+            height: 280px;
+            margin: 0 auto;
+            border: 2px solid #000;
+            box-sizing: border-box;
+        }
+
+        .frame:hover{border-color: #4779DB;}
+
+
+        /* 처음부터 보이는 그레디언트 */
+        .frame:before{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 350px;
+            height: 280px;
+            background:linear-gradient(to bottom, transparent 0%, #363636 50%);
+            opacity: 0.5;/* 불투명도 0~1*/
+            content: '';
+        }
+
+
+        /* hover하면 보이는 그레디언트 */
+        .frame:after{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 350px;
+            height: 280px;
+            background-color: rgba(71,121,219,1);
+
+            background:linear-gradient(to bottom, transparent 0%, #4779DB 99%);
+
+            content: '';
+        }
+
+        .frame:hover:after{display: block;}
+
+
+        .frame>img{
+            display: block;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">
+            가상선택자와 Gradient 효과
+        </h1>
+        <p class="frame">
+            <img src="./images/1275.jpg" alt="#">
+        </p>
+    </div>
+
+</body>
+</html>

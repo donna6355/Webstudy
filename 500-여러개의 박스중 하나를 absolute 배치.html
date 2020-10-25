@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>500-여러개의 박스중 하나를 absolute 배치</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        p{width:200px;height:200px;margin-bottom:10px;line-height:200px;text-align:center;background-color:lightyellow;}
+        /* absolute는 어떤 기준점을 기준으로 좌표설정을 한다.
+        만약 기준점을 설정하지 않으면 자동으로 body가 기준점이 된다. */
+        .abs{position:absolute;left:0;top:1100px;
+            color:white;background-color:mediumorchid;}
+    </style>
+</head>
+<body>
+    <p>box1</p>
+    <p class="abs">box2</p>
+    <p>box3</p>
+    <p>box4</p>
+    <p>box5</p>
+    <p>box6</p>
+
+    <h1>position이 지정된 요소는 html 코딩순서와 상관없이 원하는 위치에 배치할 수 있다.</h1>
+</body>
+</html>

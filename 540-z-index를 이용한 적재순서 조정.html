@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>540-z-index를 이용한 적재순서 조정</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .parent{position:relative;width:500px;height:400px;margin:0 auto;border:1px solid black;}
+        .parent>p{width:100px;height:100px;line-height:100px;text-align:center;}
+        .parent>.red{position:absolute;top:100px;left:200px;z-index:300;background-color:red;}
+        .parent>.blue{position:absolute;top:150px;right:150px;z-index:100;background-color:blue;}
+        .parent>.yellow{position:absolute;bottom:120px;left:170px;z-index:200;background-color:yellow;}
+        span{position:relative;color:white;top:30px;right:10px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">포지션한 박스가 쌓이는 순서 조정</h1>
+        <div class="parent">
+            <p class="red">red</p>
+            <p class="blue"><span>blue</span></p>
+            <p class="yellow">yellow</p>
+        </div>
+    </div>
+</body>
+</html>

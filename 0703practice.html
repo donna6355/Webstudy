@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>sub menus</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{width:1000px;margin:0 auto;}
+        #wrap *{color:#04cf5c;font-family:"roboto";}
+
+        header{position: relative;}
+        header>h1>a{display:block;width:200px;height:100px;text-indent:-9999px;background-image: url(./images/naver.png);background-size: cover;}
+
+        header>.gnb{position:absolute;right:0;top:40px;}
+        header>.gnb>ul{float:right;}
+        header>.gnb>ul>li{float:left;}
+        header>.gnb>ul>li>a{display:block;padding:0 10px;margin:0 10px;font-weight:900;font-size:20px;}
+
+        section>.left{float:left;width:570px;margin-right:5%;}
+        section>.left{position:relative;}
+        section>.left>p>a{display:block;width:100%;height:200px;text-indent:-999px;background-image: url(./images/maincat.gif);background-size:cover;background-position:0 -40px;background-repeat: no-repeat;border-radius:20px;}
+        section>.left>p:hover>a{background-size: 120%;background-position: -20px -60px;}
+
+        section>.left>h2{margin:20px 0;}
+
+        section>.left>ol>li{float:left;width:calc(570px/3);height:160px;border:1px solid #666;border-left:0;box-sizing:border-box;background-size:cover;}
+
+        section>.left>ol>li:nth-child(1){background-image: url(./images/cat1.png);}
+        section>.left>ol>li:nth-child(2){background-image: url(./images/cat2.png);}
+        section>.left>ol>li:nth-child(3){background-image: url(./images/cat3.gif);}
+        section>.left>ol>li:nth-child(4){background-image: url(./images/cat4.png);}
+        section>.left>ol>li:nth-child(5){background-image: url(./images/cat5.gif);}
+        section>.left>ol>li:nth-child(6){background-image: url(./images/cat6.gif);}
+
+        section>.left>ol>li:hover{background-image: none;}
+        section>.left>ol>li:first-child{border-left:1px solid #666;}
+
+        section>.left>ol>li>a{display:none;}
+        section>.left>ol>li:hover>a{display:inline-block;margin-top:70px;padding:5px;color:#999 !important;font-size:15px;text-align:center;border:1px solid #999;}
+        section>.left>ol>li>a:first-child{border-right:0;margin-left:30px;}
+        section>.left>ol>li>a:hover{color:#fff !important;background-color: yellowgreen;}
+
+        section>.right{float:right;width:38%;}
+        
+        section>.right>ol>li{height:120px;overflow:hidden;background-color: yellowgreen;border:1px solid #fff;border-radius:50px;box-sizing:border-box;}
+        section>.right>ol>li>a{display:block;height:120px;color:#fff!important;font-weight:800;font-size:20px;line-height:120px;text-align:center;}
+
+        section>.right>ol>li:hover:nth-child(1)>a{background-image: url(./images/cat01.jpg);background-size: cover;background-position: 0 -30px;}
+        section>.right>ol>li:hover:nth-child(2)>a{background-image: url(./images/cat02.jpg);background-size: cover;background-position: 0 -50px;}
+        section>.right>ol>li:hover:nth-child(3)>a{background-image: url(./images/cat03.jpg);background-size: cover;background-position: 0 -30px;}
+        section>.right>ol>li:hover:nth-child(4)>a{background-image: url(./images/cat04.jpg);background-size: cover;background-position: 0 -50px;}
+        section>.right>ol>li:hover:nth-child(5)>a{background-image: url(./images/cat05.jpg);background-size: cover;background-position: 0 -50px;}
+
+        
+        .clear{*zoom:1;}
+        .clear:after{display:block;clear:both;content:"";}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="clear">
+            <h1><a href="#">Naver</a></h1>
+            <nav class="gnb">
+                <ul class="clear">
+                    <li><a href="#">Mail</a></li>
+                    <li><a href="#">Cafe</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#">Pay</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Dic</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Stock</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="clear">
+            <div class="left">
+                <p><a href="#">Cat is the love:)</a></p>
+                <h2>News Stand</h2>
+                <ol class="clear">
+                    <li><a href="#">Subscribe</a><a href="#">Article</a></li>
+                    <li><a href="#">Subscribe</a><a href="#">Article</a></li>
+                    <li><a href="#">Subscribe</a><a href="#">Article</a></li>
+                    <li><a href="#">Subscribe</a><a href="#">Article</a></li>
+                    <li><a href="#">Subscribe</a><a href="#">Article</a></li>
+                    <li><a href="#">Subscribe</a><a href="#">Article</a></li>
+                </ol>
+            </div>
+            <div class="right">
+                <ol class="clear">
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="#">Stock</a></li>
+                    <li><a href="#">Money</a></li>
+                    <li><a href="#">Issue</a></li>
+                    <li><a href="#">Alert</a></li>
+                </ol>
+            </div>
+        </section>
+        <footer>
+            <address class="text-center">Designed by Donna</address>
+        </footer>
+    </div>
+</body>
+</html>

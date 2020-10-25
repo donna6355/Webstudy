@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>165-부모자식 및 형제관계의 마진</title>    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        *{margin:0;padding:0;}/*약식초기화*/
+        #parent{
+            width:600px;
+            height:400px;
+            margin:0 auto 0 auto;
+            margin:0 auto;
+            border:1px solid red;
+        }
+
+        #parent>p{
+            width:150px;
+            height:50px;
+            font-size:16px;
+            line-height:50px;
+            text-align:center;
+            border:1px solid black;
+        }
+
+        .child_1,.child_2{
+            display:inline-block;
+        }
+
+        .child_1{
+            /* margin:100px; */
+            /* margin:80px 120px; */
+            /* margin:50px 200px 150px; */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <p class="child_1">자식1(150*50)</p><p class="child_2">자식2(150*50)</p>
+        <p class="child_3">자식3(150*50)</p>
+    </div>
+</body>
+</html>

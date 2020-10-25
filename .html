@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>710-테이블 만들기</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        table{border-collapse:collapse;}
+        th,td{width:150px;height:50px;text-align:center;border:1px solid black;}
+        th
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">테이블은 표로된 정보를 나타낼 때만 사용</h1>
+        <h2>1행 3열 테이블</h2>
+        <table>
+            <tr>
+                <td>1행 1열</td>
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+            </tr>
+        </table>
+
+        <h2>2행 3열 테이블</h2>
+        <table>
+            <tr>
+                <td>1행 1열</td>
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+            </tr>
+            <tr>
+                <td>2행 1열</td>
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+            </tr>
+        </table>
+
+        <h2>출석부 3*4</h2>
+        <table>
+            <tr>
+                <th scope="col">이름</th>
+                <th scope="col">연락처</th>
+                <th scope="col">취미</th>
+                <th scpe="col">지역</th>
+            </tr>
+            <tr>
+                <td>홍길동</td>
+                <td>02-1234-5678</td>
+                <td>잔소리</td>
+                <td>무릉도원</td>
+            </tr>
+            <tr>
+                <td>마이클</td>
+                <td>02-5678-1234</td>
+                <td>라면 끓이기</td>
+                <td>캘포</td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>750-시멘틱 테이블 완전체</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        table{width:500px;margin:0 auto;}
+        th,td{height:40px;text-align:40px;text-align:center;border:1px solid #000;}
+        /* table th:first-child{width:20%;} */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">최근 2년간 전세계 시장점유율</h1>
+        <table>
+            <caption>삼성 vs 애플 시장 점유율</caption>
+            <colgroup>
+                <col style="width:20%;background-color: yellow;">
+                <col style="width:40%;background-color: pink;">
+                <col style="width:40%;background-color: aqua;">
+            </colgroup>
+            <!-- colgroup은 인라인 방식으로 width, background-color만 적용 가능 -->
+            <thead>
+                <tr>
+                    <th scope="col">구분</th>
+                    <th scope="col">삼성</th>
+                    <th scope="col">애플</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th scope="row">총계</th>
+                    <td>40%</td>
+                    <td>60%</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <th scope="row">2018년</th>
+                    <td>45%</td>
+                    <td>55%</td>
+                </tr>
+                <tr>
+                    <th scope="row">2019년</th>
+                    <td>35%</td>
+                    <td>65%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

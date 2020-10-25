@@ -1,0 +1,63 @@
+@import url(./reset.css);
+#wrap { max-width: 1000px; width: 60%; margin: 0 auto; }
+@media screen and (max-width: 992px) { #wrap { width: 90%; position: relative; } }
+#wrap * { font-family: 'nanumgothic'; }
+#wrap nav.side { position: fixed; right: 50px; top: 100px; width: 200px; background-color: #fff; z-index: 1000; }
+@media screen and (max-width: 1300px) { #wrap nav.side { right: 0; } }
+@media screen and (max-width: 992px) { #wrap nav.side { left: 0; top: 0; width: 100%; } }
+#wrap nav.side * { color: #444; }
+@media screen and (max-width: 992px) { #wrap nav.side > ul { *zoom: 1; }
+  #wrap nav.side > ul:after { display: block; clear: both; content: ""; } }
+#wrap nav.side > ul > li { width: 200px; border: 1px solid #ccc; }
+#wrap nav.side > ul > li:hover, #wrap nav.side > ul > li.on { background-color: #333; }
+#wrap nav.side > ul > li:hover > a, #wrap nav.side > ul > li.on > a { color: #ffffff; }
+@media screen and (max-width: 992px) { #wrap nav.side > ul > li { float: left; width: calc(100% / 3); border: none; border-bottom: 1px solid #ccc; } }
+#wrap nav.side > ul > li > a { display: block; height: 24px; padding: 16px; font-weight: 800; font-size: 18px; text-align: center; }
+#wrap nav.side > ul > li:nth-child(2) { border-top: none; border-bottom: none; }
+@media screen and (max-width: 992px) { #wrap nav.side > ul > li:nth-child(2) { border-bottom: 1px solid #ccc; } }
+#wrap nav.side > ul > li:nth-child(2) > ol { display: none; border-top: 1px solid #ccc; }
+@media screen and (max-width: 992px) { #wrap nav.side > ul > li:nth-child(2) > ol { display: flex; position: absolute; left: 0; width: 100%; } }
+#wrap nav.side > ul > li:nth-child(2) > ol > li { width: 200px; background-color: #fff; }
+#wrap nav.side > ul > li:nth-child(2) > ol > li.on, #wrap nav.side > ul > li:nth-child(2) > ol > li:hover { background-color: #333; }
+#wrap nav.side > ul > li:nth-child(2) > ol > li.on > a, #wrap nav.side > ul > li:nth-child(2) > ol > li:hover > a { color: #ffffff; }
+@media screen and (max-width: 992px) { #wrap nav.side > ul > li:nth-child(2) > ol > li { width: calc(100% / 6); padding: 0 8px; outline: 1px solid #ccc; background-color: #fff; } }
+#wrap nav.side > ul > li:nth-child(2) > ol > li > a { display: block; height: 40px; font-size: 13px; line-height: 40px; text-align: center; }
+@media screen and (max-width: 992px) { #wrap nav.side > ul > li:nth-child(2) > ol > li > a { display: flex; align-items: center; justify-content: center; font-size: 12px; line-height: 1; } }
+#wrap nav.side > ul > li:nth-child(2):hover > ol { display: block; }
+@media screen and (max-width: 992px) { #wrap nav.side > ul > li:nth-child(2):hover > ol { display: flex; } }
+#wrap > .main > .basicInfo { margin-top: 100px; *zoom: 1; }
+#wrap > .main > .basicInfo:after { display: block; clear: both; content: ""; }
+@media screen and (max-width: 992px) { #wrap > .main > .basicInfo { margin-top: 40px; } }
+#wrap > .main > .basicInfo > h2 { float: left; width: 350px; height: 350px; margin-right: 24px; border-radius: 50%; background-image: url(../img/me.png); background-repeat: no-repeat; background-position: center center; background-size: contain; text-indent: -9999px; }
+@media screen and (max-width: 992px) { #wrap > .main > .basicInfo > h2 { float: none; margin: 80px auto 0; } }
+#wrap > .main > .basicInfo > h1 { padding-top: 24px; color: #444; font-weight: 900; font-size: 40px; }
+@media screen and (max-width: 992px) { #wrap > .main > .basicInfo > h1 { padding-top: 0; } }
+#wrap > .main > .basicInfo > p { margin: 16px 0; font-size: 16px; line-height: 1.8; text-align: justify; }
+#wrap > .main > .basicInfo > p > span { font-weight: 900; }
+#wrap > .main > .basicInfo > h2 + p > strong { font-weight: 500; }
+#wrap > .main > .basicInfo > address { font-size: 16px; font-weight: 500; line-height: 1.8; }
+#wrap > .main > .basicInfo > address > a { color: orangered; font-weight: 900; }
+#wrap > .main > .skills { display: flex; flex-flow: row wrap; margin-top: 30px; height: 300px; }
+#wrap > .main > .skills > h2 { width: 100%; font-size: 24px; }
+#wrap > .main > .skills > div.skill1, #wrap > .main > .skills > div.skill3, #wrap > .main > .skills > div.skill4, #wrap > .main > .skills > div.skill5, #wrap > .main > .skills > div.skill6, #wrap > .main > .skills > div.skill7, #wrap > .main > .skills > div.skill2 { display: flex; justify-content: space-around; width: 50%; }
+#wrap > .main > .skills > div.skill1 > h3, #wrap > .main > .skills > div.skill3 > h3, #wrap > .main > .skills > div.skill4 > h3, #wrap > .main > .skills > div.skill5 > h3, #wrap > .main > .skills > div.skill6 > h3, #wrap > .main > .skills > div.skill7 > h3, #wrap > .main > .skills > div.skill2 > h3 { font-weight: 800; line-height: 16px; }
+#wrap > .main > .skills > div.skill1 > .bar, #wrap > .main > .skills > div.skill3 > .bar, #wrap > .main > .skills > div.skill4 > .bar, #wrap > .main > .skills > div.skill5 > .bar, #wrap > .main > .skills > div.skill6 > .bar, #wrap > .main > .skills > div.skill7 > .bar, #wrap > .main > .skills > div.skill2 > .bar { width: 70%; height: 16px; background-color: #ccc; }
+#wrap > .main > .skills > div.skill1 > .bar > span, #wrap > .main > .skills > div.skill3 > .bar > span, #wrap > .main > .skills > div.skill4 > .bar > span, #wrap > .main > .skills > div.skill5 > .bar > span, #wrap > .main > .skills > div.skill6 > .bar > span, #wrap > .main > .skills > div.skill7 > .bar > span, #wrap > .main > .skills > div.skill2 > .bar > span { display: block; width: 95%; height: 16px; color: #fff; text-align: center; line-height: 16px; background-color: #444; }
+#wrap > .main > .skills > div.skill3, #wrap > .main > .skills > div.skill4, #wrap > .main > .skills > div.skill5, #wrap > .main > .skills > div.skill6, #wrap > .main > .skills > div.skill7 { width: 33%; }
+#wrap > .main > .skills > div.skill3 > .bar, #wrap > .main > .skills > div.skill4 > .bar, #wrap > .main > .skills > div.skill5 > .bar, #wrap > .main > .skills > div.skill6 > .bar, #wrap > .main > .skills > div.skill7 > .bar { width: 50%; }
+#wrap > .main > .skills > div.skill3 > .bar > span, #wrap > .main > .skills > div.skill4 > .bar > span, #wrap > .main > .skills > div.skill5 > .bar > span, #wrap > .main > .skills > div.skill6 > .bar > span, #wrap > .main > .skills > div.skill7 > .bar > span { width: 64%; }
+#wrap > .main > .project { margin-top: 30px; position: relative; }
+@media screen and (max-width: 992px) { #wrap > .main > .project { position: static; } }
+#wrap > .main > .project > h2 { position: sticky; top: 0; padding-top: 24px; color: #444; font-weight: 900; font-size: 40px; background-color: #fff; border-bottom: 1px solid #ccc; }
+@media screen and (max-width: 992px) { #wrap > .main > .project > h2 { position: static; } }
+#wrap > .main > .project > .project1, #wrap > .main > .project > .project2, #wrap > .main > .project > .project3 { height: 680px; margin: 30px 0 0; }
+#wrap > .main > .project > .project1 > h4, #wrap > .main > .project > .project2 > h4, #wrap > .main > .project > .project3 > h4 { margin: 5% 0 2% 5%; font-size: 24px; line-height: 24px; }
+#wrap > .main > .project > .project1 > h4 > span, #wrap > .main > .project > .project2 > h4 > span, #wrap > .main > .project > .project3 > h4 > span { font-weight: 400; }
+#wrap > .main > .project > .project1 > .frame, #wrap > .main > .project > .project2 > .frame, #wrap > .main > .project > .project3 > .frame { overflow: hidden; padding: 0 5%; }
+#wrap > .main > .project > .project1 > .frame > img, #wrap > .main > .project > .project2 > .frame > img, #wrap > .main > .project > .project3 > .frame > img { width: 100%; }
+#wrap > .main > .project > .project1 > ul, #wrap > .main > .project > .project2 > ul, #wrap > .main > .project > .project3 > ul { margin-left: 5%; margin-top: 30px; }
+#wrap > .main > .project > .project1 > ul > li, #wrap > .main > .project > .project2 > ul > li, #wrap > .main > .project > .project3 > ul > li { font-size: 16px; line-height: 1.8; }
+#wrap > .main > .project > .project1 > ul > li > a, #wrap > .main > .project > .project2 > ul > li > a, #wrap > .main > .project > .project3 > ul > li > a { color: orangered; }
+#wrap > .main > .project > .project3 > .frame > img { display: inline-block; width: 48%; }
+
+/*# sourceMappingURL=index.css.map */

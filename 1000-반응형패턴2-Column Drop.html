@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000-반응형패턴2-Column Drop</title>
+    <link rel="shortcut icon" href="images/my_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            color: #fff;
+            font-weight: 800;
+            font-size: 72px;
+        }
+
+        .box1 {
+            width: 60%;
+            background-color: #f00;
+        }
+
+        .box2 {
+            order: -100;
+            width: 20%;
+            background-color: #00f;
+        }
+
+        .box3 {
+            width: 20%;
+            background-color: #0f0;
+        }
+
+        @media screen and (max-width:800px) {
+            .box2 {
+                width: 40%;
+            }
+
+            .box3 {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+
+            .box1,
+            .box2,
+            .box3 {
+                width: 100%;
+            }
+
+            /* .box1 {
+                order: -200;
+            } */
+
+            .box2 {
+                order: initial;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <section class="box1">1</section>
+        <section class="box2">2</section>
+        <section class="box3">3</section>
+    </div>
+</body>
+
+</html>
