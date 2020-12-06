@@ -1,29 +1,46 @@
 $(function(){
-    const $gnb = $('.gnb>li');
-    const $lnb = $('.lnb');
-    const $slide = $('.slide');
-    let idx = 0;
-    
-    
-    $gnb.on('mouseover',function(){
-        $lnb.show();
-    })
-    $gnb.on({
-        mouseover:function(){
-            $lnb.stop().show();
-        },
-        mouseout:function(){
-            $lnb.stop().hide();
-        }
-            })
-    
+const $gnb = $('.gnb>li')
+const $lnb = $('.lnb>li')
+
+$gnb.on({
+    'mouseover':function(){
+       $(this).addClass('on');
+       $('.bg').stop().slideDown()
+       $('.lnb').stop().slideDown();
+    },
+    'mouseout':function(){
+        $('.lnb').stop().slideUp();
+        $(this).removeClass('on')
+        $('.bg').stop().slideUp()
+        
+    }}
+    )
+$lnb.on({
+    'mouseover':function(){
+       $(this).addClass('on');
+    },
+    'mouseout':function(){
+        $(this).removeClass('on')        
+    }})
+
+
+    const $slide = $('.slide')
+    let nowIdx = 0;
     setInterval(function(){
-        if(idx <2){
-            idx++;
+        if(nowIdx <2){
+            nowIdx++;
         }else{
-            idx = 0;
+            nowIdx=0;
         }
-        $slide.stop().animate({left:idx * -1200})
-    },1500)
-    
+        $slide.stop().animate({left:nowIdx * -1200})
+    },2000)
+
+    $('.popup').on('click',function(evt){
+        evt.preventDefault();
+        $('aside').show();
+    })
+    $('.cls').on('click',function(){
+        $('aside').hide();
+    })
+
 })
